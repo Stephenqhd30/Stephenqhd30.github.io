@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Every Day is a Pawn</title>
+  
+  <subtitle>No one will suddenly love you but you suddenly know it</subtitle>
+  <link href="https://stephenqhd30.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://stephenqhd30.github.io/"/>
+  <updated>2023-04-13T01:13:57.101Z</updated>
+  <id>https://stephenqhd30.github.io/</id>
+  
+  <author>
+    <name>Stephen Qiu</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux基本指令</title>
+    <link href="https://stephenqhd30.github.io/2023/041156800.html"/>
+    <id>https://stephenqhd30.github.io/2023/041156800.html</id>
+    <published>2023-04-11T13:47:26.000Z</published>
+    <updated>2023-04-13T01:13:57.101Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;认识Linux&quot;&gt;&lt;a href=&quot;#认识Linux&quot; class=&quot;headerlink&quot; title=&quot;认识Linux&quot;&gt;&lt;/a&gt;认识Linux&lt;/h1&gt;&lt;p&gt;&lt;code&gt;通过Ctrl+ F</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Linux" scheme="https://stephenqhd30.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>个人博客性能优化</title>
+    <link href="https://stephenqhd30.github.io/2023/041127228.html"/>
+    <id>https://stephenqhd30.github.io/2023/041127228.html</id>
+    <published>2023-04-11T09:54:35.000Z</published>
+    <updated>2023-04-13T01:12:45.106Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;修改博客标题在手机端的字体大小&quot;&gt;&lt;a href=&quot;#修改博客标题在手机端的字体大小&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="HEXO" scheme="https://stephenqhd30.github.io/tags/HEXO/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>个人博客的美化(一)</title>
+    <link href="https://stephenqhd30.github.io/2023/041127130.html"/>
+    <id>https://stephenqhd30.github.io/2023/041127130.html</id>
+    <published>2023-04-11T05:46:51.000Z</published>
+    <updated>2023-04-11T13:50:22.938Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;如何美化你的Hexo&quot;&gt;&lt;a href=&quot;#如何美化你的Hexo&quot; class=&quot;headerlink&quot; title=&quot;如何美化你的Hexo&quot;&gt;&lt;/a&gt;如何美化你的Hexo&lt;/h1&gt;&lt;h2 id=&quot;下载一个主题matery&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    
+    <category term="HEXO" scheme="https://stephenqhd30.github.io/tags/HEXO/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何优雅的搭建个人博客</title>
+    <link href="https://stephenqhd30.github.io/2023/041153022.html"/>
+    <id>https://stephenqhd30.github.io/2023/041153022.html</id>
+    <published>2023-04-11T05:42:40.000Z</published>
+    <updated>2023-04-11T13:50:31.117Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;配置环境的安装&quot;&gt;&lt;a href=&quot;#配置环境的安装&quot; class=&quot;headerlink&quot; title=&quot;配置环境的安装&quot;&gt;&lt;/a&gt;配置环境的安装&lt;/h1&gt;&lt;h2 id=&quot;需要的配置环境：&quot;&gt;&lt;a href=&quot;#需要的配置环境：&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="HEXO" scheme="https://stephenqhd30.github.io/tags/HEXO/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>用hexo搭建一个属于自己的博客</title>
+    <link href="https://stephenqhd30.github.io/2023/041026680.html"/>
+    <id>https://stephenqhd30.github.io/2023/041026680.html</id>
+    <published>2023-04-10T04:58:08.000Z</published>
+    <updated>2023-04-10T05:49:08.215Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;能不能给我一首歌的时间，让我把这记忆变成永远&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;                 &lt;/p&gt;
+&lt;h1 id=&quot;配置环境的安装&quot;&gt;&lt;a href=&quot;#配置环境的安装&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="pages" scheme="https://stephenqhd30.github.io/tags/pages/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++常见案例~数组元素的逆置</title>
+    <link href="https://stephenqhd30.github.io/2023/040932132.html"/>
+    <id>https://stephenqhd30.github.io/2023/040932132.html</id>
+    <published>2023-04-09T14:36:04.000Z</published>
+    <updated>2023-04-11T13:51:36.435Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;数组元素的逆置&quot;&gt;&lt;a href=&quot;#数组元素的逆置&quot; class=&quot;headerlink&quot; title=&quot;数组元素的逆置&quot;&gt;&lt;/a&gt;数组元素的逆置&lt;/h1&gt;&lt;pre class=&quot;line-numbers language-cpp&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="C++" scheme="https://stephenqhd30.github.io/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++常见案例~三目运算符</title>
+    <link href="https://stephenqhd30.github.io/2023/040937324.html"/>
+    <id>https://stephenqhd30.github.io/2023/040937324.html</id>
+    <published>2023-04-09T14:35:53.000Z</published>
+    <updated>2023-04-11T13:57:15.993Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;三目运算符&quot;&gt;&lt;a href=&quot;#三目运算符&quot; class=&quot;headerlink&quot; title=&quot;三目运算符&quot;&gt;&lt;/a&gt;三目运算符&lt;/h1&gt;&lt;pre class=&quot;line-numbers language-cpp&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="C++" scheme="https://stephenqhd30.github.io/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++常见案例~冒泡排序</title>
+    <link href="https://stephenqhd30.github.io/2023/040960684.html"/>
+    <id>https://stephenqhd30.github.io/2023/040960684.html</id>
+    <published>2023-04-09T14:35:42.000Z</published>
+    <updated>2023-04-13T01:14:14.151Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;冒泡排序&quot;&gt;&lt;a href=&quot;#冒泡排序&quot; class=&quot;headerlink&quot; title=&quot;冒泡排序&quot;&gt;&lt;/a&gt;冒泡排序&lt;/h1&gt;&lt;pre class=&quot;line-numbers language-cpp&quot; data-language=&quot;cpp&quot;&gt;&lt;code</summary>
+        
+      
+    
+    
+    
+    
+    <category term="C++" scheme="https://stephenqhd30.github.io/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://stephenqhd30.github.io/2023/040916107.html"/>
+    <id>https://stephenqhd30.github.io/2023/040916107.html</id>
+    <published>2023-04-09T14:35:42.000Z</published>
+    <updated>2023-04-10T05:31:57.287Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="pages" scheme="https://stephenqhd30.github.io/tags/pages/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++常见案例~查找子字符串在字符串中出现在的频率</title>
+    <link href="https://stephenqhd30.github.io/2023/040919546.html"/>
+    <id>https://stephenqhd30.github.io/2023/040919546.html</id>
+    <published>2023-04-09T14:35:33.000Z</published>
+    <updated>2023-04-11T13:51:22.948Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;。						&lt;/p&gt;
+&lt;h1 id=&quot;查找子字符串在字符串中出现在的频率&quot;&gt;&lt;a href=&quot;#查找子字符串在字符串中出现在的频率&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+    <category term="C++" scheme="https://stephenqhd30.github.io/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++常见案例~查找关键数据在数组中的位置位置</title>
+    <link href="https://stephenqhd30.github.io/2023/04099416.html"/>
+    <id>https://stephenqhd30.github.io/2023/04099416.html</id>
+    <published>2023-04-09T14:31:37.000Z</published>
+    <updated>2023-04-11T13:51:28.623Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;查找关键数据在数组中的位置位置&quot;&gt;&lt;a href=&quot;#查找关键数据在数组中的位置位置&quot; class=&quot;headerlink&quot; title=&quot;查找关键数据在数组中的位置位置&quot;&gt;&lt;/a&gt;查找关键数据在数组中的位置位置&lt;/h1&gt;&lt;pre</summary>
+        
+      
+    
+    
+    
+    
+    <category term="C++" scheme="https://stephenqhd30.github.io/tags/C/"/>
+    
+  </entry>
+  
+</feed>
