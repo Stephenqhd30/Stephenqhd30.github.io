@@ -6,7 +6,7 @@
   <link href="https://stephenqhd30.github.io/atom.xml" rel="self"/>
   
   <link href="https://stephenqhd30.github.io/"/>
-  <updated>2023-04-13T01:13:57.101Z</updated>
+  <updated>2023-04-14T01:34:13.524Z</updated>
   <id>https://stephenqhd30.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Linux基本指令</title>
-    <link href="https://stephenqhd30.github.io/2023/041156800.html"/>
-    <id>https://stephenqhd30.github.io/2023/041156800.html</id>
-    <published>2023-04-11T13:47:26.000Z</published>
-    <updated>2023-04-13T01:13:57.101Z</updated>
+    <title>Linux的基本命令</title>
+    <link href="https://stephenqhd30.github.io/2023/04149188.html"/>
+    <id>https://stephenqhd30.github.io/2023/04149188.html</id>
+    <published>2023-04-14T01:19:51.000Z</published>
+    <updated>2023-04-14T01:34:13.524Z</updated>
     
     
       
@@ -34,6 +34,8 @@
     
     
     
+    <category term="记录一下网安的学习" scheme="https://stephenqhd30.github.io/categories/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8B%E7%BD%91%E5%AE%89%E7%9A%84%E5%AD%A6%E4%B9%A0/"/>
+    
     
     <category term="Linux" scheme="https://stephenqhd30.github.io/tags/Linux/"/>
     
@@ -44,7 +46,7 @@
     <link href="https://stephenqhd30.github.io/2023/041127228.html"/>
     <id>https://stephenqhd30.github.io/2023/041127228.html</id>
     <published>2023-04-11T09:54:35.000Z</published>
-    <updated>2023-04-13T01:12:45.106Z</updated>
+    <updated>2023-04-14T01:33:42.807Z</updated>
     
     
       
@@ -57,6 +59,8 @@
     
     
     
+    <category term="个人博客的搭建" scheme="https://stephenqhd30.github.io/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA/"/>
+    
     
     <category term="HEXO" scheme="https://stephenqhd30.github.io/tags/HEXO/"/>
     
@@ -67,7 +71,7 @@
     <link href="https://stephenqhd30.github.io/2023/041127130.html"/>
     <id>https://stephenqhd30.github.io/2023/041127130.html</id>
     <published>2023-04-11T05:46:51.000Z</published>
-    <updated>2023-04-11T13:50:22.938Z</updated>
+    <updated>2023-04-14T01:33:52.425Z</updated>
     
     
       
@@ -80,6 +84,8 @@
     
     
     
+    <category term="个人博客的搭建" scheme="https://stephenqhd30.github.io/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA/"/>
+    
     
     <category term="HEXO" scheme="https://stephenqhd30.github.io/tags/HEXO/"/>
     
@@ -90,7 +96,7 @@
     <link href="https://stephenqhd30.github.io/2023/041153022.html"/>
     <id>https://stephenqhd30.github.io/2023/041153022.html</id>
     <published>2023-04-11T05:42:40.000Z</published>
-    <updated>2023-04-11T13:50:31.117Z</updated>
+    <updated>2023-04-14T01:33:25.652Z</updated>
     
     
       
@@ -103,6 +109,8 @@
     
     
     
+    <category term="个人博客的搭建" scheme="https://stephenqhd30.github.io/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E6%90%AD%E5%BB%BA/"/>
+    
     
     <category term="HEXO" scheme="https://stephenqhd30.github.io/tags/HEXO/"/>
     
@@ -113,7 +121,7 @@
     <link href="https://stephenqhd30.github.io/2023/040932132.html"/>
     <id>https://stephenqhd30.github.io/2023/040932132.html</id>
     <published>2023-04-09T14:36:04.000Z</published>
-    <updated>2023-04-11T13:51:36.435Z</updated>
+    <updated>2023-04-14T01:30:59.092Z</updated>
     
     
       
@@ -126,8 +134,10 @@
     
     
     
+    <category term="记录一下C++的学习" scheme="https://stephenqhd30.github.io/categories/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8BC-%E7%9A%84%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="C++" scheme="https://stephenqhd30.github.io/tags/C/"/>
+    
+    <category term="c++" scheme="https://stephenqhd30.github.io/tags/c/"/>
     
   </entry>
   
@@ -136,7 +146,7 @@
     <link href="https://stephenqhd30.github.io/2023/040937324.html"/>
     <id>https://stephenqhd30.github.io/2023/040937324.html</id>
     <published>2023-04-09T14:35:53.000Z</published>
-    <updated>2023-04-11T13:57:15.993Z</updated>
+    <updated>2023-04-14T01:31:26.512Z</updated>
     
     
       
@@ -149,8 +159,10 @@
     
     
     
+    <category term="记录一下C++的学习" scheme="https://stephenqhd30.github.io/categories/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8BC-%E7%9A%84%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="C++" scheme="https://stephenqhd30.github.io/tags/C/"/>
+    
+    <category term="c++" scheme="https://stephenqhd30.github.io/tags/c/"/>
     
   </entry>
   
@@ -159,7 +171,7 @@
     <link href="https://stephenqhd30.github.io/2023/040960684.html"/>
     <id>https://stephenqhd30.github.io/2023/040960684.html</id>
     <published>2023-04-09T14:35:42.000Z</published>
-    <updated>2023-04-13T01:14:14.151Z</updated>
+    <updated>2023-04-14T01:32:04.168Z</updated>
     
     
       
@@ -172,8 +184,10 @@
     
     
     
+    <category term="记录一下C++的学习" scheme="https://stephenqhd30.github.io/categories/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8BC-%E7%9A%84%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="C++" scheme="https://stephenqhd30.github.io/tags/C/"/>
+    
+    <category term="c++" scheme="https://stephenqhd30.github.io/tags/c/"/>
     
   </entry>
   
@@ -182,7 +196,7 @@
     <link href="https://stephenqhd30.github.io/2023/040916107.html"/>
     <id>https://stephenqhd30.github.io/2023/040916107.html</id>
     <published>2023-04-09T14:35:42.000Z</published>
-    <updated>2023-04-10T05:31:57.287Z</updated>
+    <updated>2023-04-14T01:31:54.548Z</updated>
     
     
       
@@ -205,7 +219,7 @@
     <link href="https://stephenqhd30.github.io/2023/040919546.html"/>
     <id>https://stephenqhd30.github.io/2023/040919546.html</id>
     <published>2023-04-09T14:35:33.000Z</published>
-    <updated>2023-04-11T13:51:22.948Z</updated>
+    <updated>2023-04-14T01:32:27.720Z</updated>
     
     
       
@@ -219,8 +233,10 @@
     
     
     
+    <category term="记录一下C++的学习" scheme="https://stephenqhd30.github.io/categories/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8BC-%E7%9A%84%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="C++" scheme="https://stephenqhd30.github.io/tags/C/"/>
+    
+    <category term="c++" scheme="https://stephenqhd30.github.io/tags/c/"/>
     
   </entry>
   
@@ -229,7 +245,7 @@
     <link href="https://stephenqhd30.github.io/2023/04099416.html"/>
     <id>https://stephenqhd30.github.io/2023/04099416.html</id>
     <published>2023-04-09T14:31:37.000Z</published>
-    <updated>2023-04-11T13:51:28.623Z</updated>
+    <updated>2023-04-14T01:32:55.719Z</updated>
     
     
       
@@ -242,8 +258,10 @@
     
     
     
+    <category term="记录一下C++的学习" scheme="https://stephenqhd30.github.io/categories/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8BC-%E7%9A%84%E5%AD%A6%E4%B9%A0/"/>
     
-    <category term="C++" scheme="https://stephenqhd30.github.io/tags/C/"/>
+    
+    <category term="c++" scheme="https://stephenqhd30.github.io/tags/c/"/>
     
   </entry>
   
