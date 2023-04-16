@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>linux安装edge</title>
+      <link href="/2023/041655359.html"/>
+      <url>/2023/041655359.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="Linux通过yum安装Edge"><a href="#Linux通过yum安装Edge" class="headerlink" title="Linux通过yum安装Edge"></a>Linux通过yum安装Edge</h2><blockquote><ul><li>cd /etc/yum.repos.d</li><li>vi Microsoft-Edge.repo</li><li>[microsoft-edge]<br>name=Microsoft-Edge<br>failovermethod=priority<br>baseurl=<a href="http://packages.microsoft.com/yumrepos/edge/">http://packages.microsoft.com/yumrepos/edge/</a><br>gpgcheck=1<br>gpgkey=<a href="http://packages.microsoft.com/keys/microsoft.asc">http://packages.microsoft.com/keys/microsoft.asc</a></li><li>yum makecache</li><li>yum install -y microsoft-edge</li></ul></blockquote><p><img src="/2023/041655359/image-20230402132931786.png" alt="image-20230402132931786"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 一些乱七八糟的小技能 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>kali和linux的防火墙设置</title>
+      <link href="/2023/041617290.html"/>
+      <url>/2023/041617290.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="kali和centos的防火墙"><a href="#kali和centos的防火墙" class="headerlink" title="kali和centos的防火墙"></a>kali和centos的防火墙</h1><h2 id="kali的防火墙"><a href="#kali的防火墙" class="headerlink" title="kali的防火墙"></a>kali的防火墙</h2><h3 id="安装ufw"><a href="#安装ufw" class="headerlink" title="安装ufw"></a>安装ufw</h3><ul><li>apt-get install ufw</li></ul><p><img src="/2023/041617290/image-20230415155329972.png" alt="image-20230415155329972"></p><h3 id="ufw命令使用以及端口的开放："><a href="#ufw命令使用以及端口的开放：" class="headerlink" title="ufw命令使用以及端口的开放："></a>ufw命令使用以及端口的开放：</h3><blockquote><p>检查防火墙的状态（默认 inactive）</p><ul><li>ufw status</li></ul><p>防火墙版本             </p><ul><li>ufw version</li></ul><p>设置：</p><p>​启动ufw防火墙            </p><ul><li>ufw enable</li></ul><p>默认禁止访问所有   </p><ul><li>ufw default deny</li></ul><p>上面两条一定要做，之后需要开哪个端口再用下面方法开启某个端口</p><p>开放6379端口(redis)        </p><ul><li>ufw allow 6379</li></ul><p>开放22/TCP端口            </p><ul><li>ufw allow 22/tcp</li></ul><p>开放53端口(tcp/udp)        </p><ul><li>ufw allow 53</li></ul><p>禁止外部访问            </p><ul><li>ufw deny 3306</li></ul><p>删除已经添加过的规则            </p><ul><li>ufw delete allow 22</li></ul><p>允许此IP访问所有的本机端口    </p><ul><li>ufw allow from 192.168.1.100</li></ul><p>删除上面的规则            </p><ul><li>ufw delete allow from 192.168.1.100</li></ul><p>打开来自192.168.0.1的tcp请求的22端口</p><ul><li>ufw allow proto tcp from 192.168.0.1 to any port 22</li></ul><p>查看规则，显示行号         </p><ul><li>ufw status numbered</li></ul><p>删除第三条规则            </p><ul><li>ufw delete 3</li></ul><p>关闭ufw                 </p><ul><li>ufw disable</li></ul><p>禁止对8888端口的访问    </p><ul><li>ufw deny 8888</li></ul></blockquote><h3 id="Centos7中防火墙"><a href="#Centos7中防火墙" class="headerlink" title="Centos7中防火墙"></a>Centos7中防火墙</h3><p><strong>CentOS 7.0默认使用的是firewall作为防火墙</strong></p><blockquote><p>查看防火墙状态</p><ul><li>firewall-cmd –state</li></ul><p>停止firewall</p><ul><li>systemctl stop firewalld.service</li></ul><p>禁止firewall开机启动</p><ul><li>systemctl disable firewalld.service</li></ul><p>重启防火墙</p><ul><li>firewall-cmd –reloadl</li></ul></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 一些乱七八糟的小技能 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>HTML的学习（一）</title>
       <link href="/2023/041431942.html"/>
       <url>/2023/041431942.html</url>
@@ -38,7 +88,7 @@
       
       <categories>
           
-          <category> 记录一下网安的学习 </category>
+          <category> 一些乱七八糟的小技能 </category>
           
       </categories>
       
@@ -63,7 +113,7 @@
       
       <categories>
           
-          <category> 记录一下网安的学习 </category>
+          <category> 一些乱七八糟的小技能 </category>
           
       </categories>
       
