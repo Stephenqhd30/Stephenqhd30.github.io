@@ -6,7 +6,7 @@
   <link href="https://stephenqhd30.github.io/atom.xml" rel="self"/>
   
   <link href="https://stephenqhd30.github.io/"/>
-  <updated>2023-04-17T14:27:39.915Z</updated>
+  <updated>2023-04-17T14:53:44.491Z</updated>
   <id>https://stephenqhd30.github.io/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>信息的主动收集和被动收集</title>
+    <link href="https://stephenqhd30.github.io/2023/041737913.html"/>
+    <id>https://stephenqhd30.github.io/2023/041737913.html</id>
+    <published>2023-04-17T14:48:45.000Z</published>
+    <updated>2023-04-17T14:53:44.491Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;信息的主动收集和被动收集&quot;&gt;&lt;a href=&quot;#信息的主动收集和被动收集&quot; class=&quot;headerlink&quot; title=&quot;信息的主动收集和被动收集&quot;&gt;&lt;/a&gt;信息的主动收集和被动收集&lt;/h1&gt;&lt;h2 id=&quot;被动收集信息&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="记录一下网安的学习" scheme="https://stephenqhd30.github.io/categories/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8B%E7%BD%91%E5%AE%89%E7%9A%84%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="Linux" scheme="https://stephenqhd30.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
     <title>三机ping通和什么是局域网</title>
     <link href="https://stephenqhd30.github.io/2023/041716160.html"/>
     <id>https://stephenqhd30.github.io/2023/041716160.html</id>
     <published>2023-04-17T14:03:32.000Z</published>
-    <updated>2023-04-17T14:27:39.915Z</updated>
+    <updated>2023-04-17T14:39:38.396Z</updated>
     
     
       
@@ -34,7 +59,7 @@
     
     
     
-    <category term="一些乱七八糟的小技能" scheme="https://stephenqhd30.github.io/categories/%E4%B8%80%E4%BA%9B%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F%E7%9A%84%E5%B0%8F%E6%8A%80%E8%83%BD/"/>
+    <category term="记录一下网安的学习" scheme="https://stephenqhd30.github.io/categories/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8B%E7%BD%91%E5%AE%89%E7%9A%84%E5%AD%A6%E4%B9%A0/"/>
     
     
     <category term="Linux" scheme="https://stephenqhd30.github.io/tags/Linux/"/>
