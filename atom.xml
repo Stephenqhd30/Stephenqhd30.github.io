@@ -6,7 +6,7 @@
   <link href="https://stephenqhd30.github.io/atom.xml" rel="self"/>
   
   <link href="https://stephenqhd30.github.io/"/>
-  <updated>2023-04-16T15:04:51.156Z</updated>
+  <updated>2023-04-17T14:27:39.915Z</updated>
   <id>https://stephenqhd30.github.io/</id>
   
   <author>
@@ -17,11 +17,61 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>三机ping通和什么是局域网</title>
+    <link href="https://stephenqhd30.github.io/2023/041716160.html"/>
+    <id>https://stephenqhd30.github.io/2023/041716160.html</id>
+    <published>2023-04-17T14:03:32.000Z</published>
+    <updated>2023-04-17T14:27:39.915Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;手机热点：&quot;&gt;&lt;a href=&quot;#手机热点：&quot; class=&quot;headerlink&quot; title=&quot;手机热点：&quot;&gt;&lt;/a&gt;手机热点：&lt;/h1&gt;&lt;h2 id=&quot;NAT模式下的三机ping通：&quot;&gt;&lt;a href=&quot;#NAT模式下的三机ping通：&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="一些乱七八糟的小技能" scheme="https://stephenqhd30.github.io/categories/%E4%B8%80%E4%BA%9B%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F%E7%9A%84%E5%B0%8F%E6%8A%80%E8%83%BD/"/>
+    
+    
+    <category term="Linux" scheme="https://stephenqhd30.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>桥接的方法</title>
+    <link href="https://stephenqhd30.github.io/2023/041749606.html"/>
+    <id>https://stephenqhd30.github.io/2023/041749606.html</id>
+    <published>2023-04-17T13:58:20.000Z</published>
+    <updated>2023-04-17T14:26:40.092Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Kali&quot;&gt;&lt;a href=&quot;#Kali&quot; class=&quot;headerlink&quot; title=&quot;Kali:&quot;&gt;&lt;/a&gt;Kali:&lt;/h1&gt;&lt;h2 id=&quot;1&quot;&gt;&lt;a href=&quot;#1&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="一些乱七八糟的小技能" scheme="https://stephenqhd30.github.io/categories/%E4%B8%80%E4%BA%9B%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F%E7%9A%84%E5%B0%8F%E6%8A%80%E8%83%BD/"/>
+    
+    
+    <category term="Linux" scheme="https://stephenqhd30.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
     <title>linux安装edge</title>
     <link href="https://stephenqhd30.github.io/2023/041655359.html"/>
     <id>https://stephenqhd30.github.io/2023/041655359.html</id>
     <published>2023-04-16T15:00:15.000Z</published>
-    <updated>2023-04-16T15:04:51.156Z</updated>
+    <updated>2023-04-16T15:05:16.452Z</updated>
     
     
       
@@ -46,7 +96,7 @@
     <link href="https://stephenqhd30.github.io/2023/041617290.html"/>
     <id>https://stephenqhd30.github.io/2023/041617290.html</id>
     <published>2023-04-16T14:54:55.000Z</published>
-    <updated>2023-04-16T14:59:14.725Z</updated>
+    <updated>2023-04-16T15:05:16.451Z</updated>
     
     
       

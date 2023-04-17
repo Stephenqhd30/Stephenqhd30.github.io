@@ -1,0 +1,1176 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Linux">
+    <meta name="description" content="不是我跑去了整形，只是我拿出真心~">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>三机ping通和什么是局域网 | Every Day is a Pawn</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    
+
+
+    <!-- bg-cover style     -->
+
+
+
+<link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+<link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+<link rel="stylesheet" type="text/css" href="/css/matery.css">
+<link rel="stylesheet" type="text/css" href="/css/my.css">
+<link rel="stylesheet" type="text/css" href="/css/dark.css" media="none" onload="if(media!='all')media='all'">
+
+
+
+
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/css/post.css">
+
+
+
+
+    
+
+
+
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="Every Day is a Pawn" type="application/atom+xml">
+</head>
+
+
+<body>
+
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Every Day is a Pawn</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+  <li>
+    <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
+      <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Every Day is a Pawn</div>
+        <div class="logo-desc">
+            
+            You can look back, but don&#39;t walk back
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">三机ping通和什么是局域网</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Linux/">
+                                <span class="chip bg-color">Linux</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E4%B8%80%E4%BA%9B%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F%E7%9A%84%E5%B0%8F%E6%8A%80%E8%83%BD/" class="post-category">
+                                一些乱七八糟的小技能
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2023-04-17
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2023-04-17
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    2.6k
+                </div>
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.min.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="手机热点："><a href="#手机热点：" class="headerlink" title="手机热点："></a>手机热点：</h1><h2 id="NAT模式下的三机ping通："><a href="#NAT模式下的三机ping通：" class="headerlink" title="NAT模式下的三机ping通："></a>NAT模式下的三机ping通：</h2><p><code>手机热点模式下的ip</code></p>
+<blockquote>
+<ul>
+<li>物理机 ip：192.168.167.173</li>
+<li>CentOS 7 ip:  192.168.77.132</li>
+<li>Kali ip : 192.168.77.157</li>
+</ul>
+</blockquote>
+<h2 id="CentOS-7："><a href="#CentOS-7：" class="headerlink" title="CentOS 7："></a>CentOS 7：</h2><p><img src="/2023/041716160/image-20230401164016749.png" alt="image-20230401164016749"></p>
+<p><img src="/2023/041716160/image-20230401164021435.png" alt="image-20230401164021435"></p>
+<h3 id="CentOS-7"><a href="#CentOS-7" class="headerlink" title="CentOS 7:"></a>CentOS 7:</h3><p><img src="/2023/041716160/image-20230401164025630.png" alt="image-20230401164025630"></p>
+<h3 id="Kali"><a href="#Kali" class="headerlink" title="Kali:"></a>Kali:</h3><p><img src="/2023/041716160/image-20230401164030360.png" alt="image-20230401164030360"></p>
+<h3 id="物理机："><a href="#物理机：" class="headerlink" title="物理机："></a>物理机：</h3><p><img src="/2023/041716160/image-20230401164033684.png" alt="image-20230401164033684"></p>
+<h2 id="Kali："><a href="#Kali：" class="headerlink" title="Kali："></a>Kali：</h2><p><img src="/2023/041716160/image-20230401164037901.png" alt="image-20230401164037901"></p>
+<p><img src="/2023/041716160/image-20230401164041624.png" alt="image-20230401164041624"></p>
+<h3 id="CentOS-7-1"><a href="#CentOS-7-1" class="headerlink" title="CentOS 7:"></a>CentOS 7:</h3><p><img src="/2023/041716160/image-20230401164045941.png" alt="image-20230401164045941"></p>
+<h3 id="Kali-1"><a href="#Kali-1" class="headerlink" title="Kali:"></a>Kali:</h3><p><img src="/2023/041716160/image-20230401164049792.png" alt="image-20230401164049792"></p>
+<h3 id="物理机：-1"><a href="#物理机：-1" class="headerlink" title="物理机："></a>物理机：</h3><p><img src="/2023/041716160/image-20230401164053255.png" alt="image-20230401164053255"></p>
+<h2 id="物理机：-2"><a href="#物理机：-2" class="headerlink" title="物理机："></a>物理机：</h2><p><img src="/2023/041716160/image-20230401164058232.png" alt="image-20230401164058232"></p>
+<h3 id="CentOS-7-2"><a href="#CentOS-7-2" class="headerlink" title="CentOS 7:"></a>CentOS 7:</h3><p><img src="/2023/041716160/image-20230401164102545.png" alt="image-20230401164102545"></p>
+<h3 id="Kali：-1"><a href="#Kali：-1" class="headerlink" title="Kali："></a>Kali：</h3><p><img src="/2023/041716160/image-20230401164106109.png" alt="image-20230401164106109"></p>
+<h2 id="桥接模式下的三机ping通："><a href="#桥接模式下的三机ping通：" class="headerlink" title="桥接模式下的三机ping通："></a>桥接模式下的三机ping通：</h2><p><code>手机热点模式下的ip</code></p>
+<blockquote>
+<ul>
+<li>物理机 ip：192.168.167.173</li>
+<li>CentOS 7 ip:  192.168.167.188</li>
+<li>Kali ip :192.168.167.177</li>
+</ul>
+</blockquote>
+<h2 id="Kali-2"><a href="#Kali-2" class="headerlink" title="Kali:"></a>Kali:</h2><p><img src="/2023/041716160/image-20230401164110428.png" alt="image-20230401164110428"></p>
+<p><img src="/2023/041716160/image-20230401164113818.png" alt="image-20230401164113818"></p>
+<h3 id="kali"><a href="#kali" class="headerlink" title="kali:"></a>kali:</h3><p><img src="/2023/041716160/image-20230401164117003.png" alt="image-20230401164117003"></p>
+<h3 id="CentOS7："><a href="#CentOS7：" class="headerlink" title="CentOS7："></a>CentOS7：</h3><p><img src="/2023/041716160/image-20230401222616756.png" alt="image-20230401222616756"></p>
+<h3 id="物理机：-3"><a href="#物理机：-3" class="headerlink" title="物理机："></a>物理机：</h3><p><img src="/2023/041716160/image-20230401164120487.png" alt="image-20230401164120487"></p>
+<h2 id="CentOS7"><a href="#CentOS7" class="headerlink" title="CentOS7:"></a>CentOS7:</h2><h3 id="Kali-3"><a href="#Kali-3" class="headerlink" title="Kali:"></a>Kali:</h3><p><img src="/2023/041716160/image-20230401222656749.png" alt="image-20230401222656749"></p>
+<h3 id="CentOS7-1"><a href="#CentOS7-1" class="headerlink" title="CentOS7:"></a>CentOS7:</h3><p><img src="/2023/041716160/image-20230401222723016.png" alt="image-20230401222723016"></p>
+<h3 id="物理机：-4"><a href="#物理机：-4" class="headerlink" title="物理机："></a>物理机：</h3><p><img src="/2023/041716160/image-20230401222751889.png" alt="image-20230401222751889"></p>
+<h2 id="物理机：-5"><a href="#物理机：-5" class="headerlink" title="物理机："></a>物理机：</h2><h3 id="Kali-4"><a href="#Kali-4" class="headerlink" title="Kali:"></a>Kali:</h3><p><img src="/2023/041716160/image-20230401221651356.png" alt="image-20230401221651356"></p>
+<h3 id="CentOS7-2"><a href="#CentOS7-2" class="headerlink" title="CentOS7:"></a>CentOS7:</h3><p><img src="/2023/041716160/image-20230401222835932.png" alt="image-20230401222835932"></p>
+<h1 id="校园网"><a href="#校园网" class="headerlink" title="校园网"></a>校园网</h1><h2 id="NAT模式下的三机ping通：-1"><a href="#NAT模式下的三机ping通：-1" class="headerlink" title="NAT模式下的三机ping通："></a>NAT模式下的三机ping通：</h2><p><code>校园网模式下的ip</code></p>
+<blockquote>
+<ul>
+<li>物理机 ip : 10.22.173.252</li>
+<li>CentOS 7 ip : 192.168.77.132</li>
+<li>Kali ip : 192.168.77.157</li>
+</ul>
+</blockquote>
+<h2 id="Centos7"><a href="#Centos7" class="headerlink" title="Centos7:"></a>Centos7:</h2><p><img src="/2023/041716160/image-20230401164128930.png" alt="image-20230401164128930"></p>
+<p><img src="/2023/041716160/image-20230401164132528.png" alt="image-20230401164132528"></p>
+<h3 id="CentOS-7：-1"><a href="#CentOS-7：-1" class="headerlink" title="CentOS 7："></a>CentOS 7：</h3><p><img src="/2023/041716160/image-20230401164142411.png" alt="image-20230401164142411"></p>
+<h3 id="Kali-5"><a href="#Kali-5" class="headerlink" title="Kali:"></a>Kali:</h3><p><img src="/2023/041716160/image-20230401164146380.png" alt="image-20230401164146380"></p>
+<h3 id="物理机：-6"><a href="#物理机：-6" class="headerlink" title="物理机："></a>物理机：</h3><p><img src="/2023/041716160/image-20230401164150041.png" alt="image-20230401164150041"></p>
+<h2 id="Kali-6"><a href="#Kali-6" class="headerlink" title="Kali:"></a>Kali:</h2><p><img src="/2023/041716160/image-20230401164153711.png" alt="image-20230401164153711"></p>
+<p><img src="/2023/041716160/image-20230401164156691.png" alt="image-20230401164156691"></p>
+<h3 id="kali："><a href="#kali：" class="headerlink" title="kali："></a>kali：</h3><p><img src="/2023/041716160/image-20230401164159903.png" alt="image-20230401164159903"></p>
+<h3 id="CentOS-7-3"><a href="#CentOS-7-3" class="headerlink" title="CentOS 7:"></a>CentOS 7:</h3><p><img src="/2023/041716160/image-20230401164203428.png" alt="image-20230401164203428"></p>
+<h3 id="物理机：-7"><a href="#物理机：-7" class="headerlink" title="物理机："></a>物理机：</h3><p><img src="/2023/041716160/image-20230401164206731.png" alt="image-20230401164206731"></p>
+<h2 id="物理机：-8"><a href="#物理机：-8" class="headerlink" title="物理机："></a>物理机：</h2><p><img src="/2023/041716160/image-20230401164210005.png" alt="image-20230401164210005"></p>
+<p><img src="/2023/041716160/image-20230401164213974.png" alt="image-20230401164213974"></p>
+<h3 id="kali：-1"><a href="#kali：-1" class="headerlink" title="kali："></a>kali：</h3><p><img src="/2023/041716160/image-20230401164218320.png" alt="image-20230401164218320"></p>
+<h3 id="Centos7："><a href="#Centos7：" class="headerlink" title="Centos7："></a>Centos7：</h3><p><img src="/2023/041716160/image-20230401164221272.png" alt="image-20230401164221272"></p>
+<h2 id="桥接模式下的三机ping通：（但是校园网环境下无法桥接）"><a href="#桥接模式下的三机ping通：（但是校园网环境下无法桥接）" class="headerlink" title="桥接模式下的三机ping通：（但是校园网环境下无法桥接）"></a>桥接模式下的三机ping通：（但是校园网环境下无法桥接）</h2><p>嗯嗯…是这样的</p>
+<h1 id="什么是局域网"><a href="#什么是局域网" class="headerlink" title="什么是局域网"></a>什么是局域网</h1><h1 id="局域网："><a href="#局域网：" class="headerlink" title="局域网："></a>局域网：</h1><h2 id="局域网的简介"><a href="#局域网的简介" class="headerlink" title="局域网的简介"></a>局域网的简介</h2><p>局域网自然就是局部地区形成的一个区域网络，其特点就是分布地区范围有限，可大可小，大到一栋建筑楼 与相邻建筑之间的连接，小到可以是办公室之间的联系。局域网自身相对其他网络传输速度更快，性能更稳定，框架简易，并且是封闭性，这也是很多机构选择的原因所在。局域网自身的组成大体由计算机设备、网络连接设备、网络传输介质3大部分构成，其中，计算机设备又包括<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%9C%8D%E5%8A%A1%E5%99%A8/100571?fromModule=lemma_inlink">服务器</a>与<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%B7%A5%E4%BD%9C%E7%AB%99/217955?fromModule=lemma_inlink">工作站</a>，网络连接设备则包含了<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E7%BD%91%E5%8D%A1/155684?fromModule=lemma_inlink">网卡</a>、<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E9%9B%86%E7%BA%BF%E5%99%A8/214614?fromModule=lemma_inlink">集线器</a>、<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E4%BA%A4%E6%8D%A2%E6%9C%BA/103532?fromModule=lemma_inlink">交换机</a>，网络传输介质简单来说就是<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E7%BD%91%E7%BA%BF/1888463?fromModule=lemma_inlink">网线</a>，由<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%90%8C%E8%BD%B4%E7%94%B5%E7%BC%86/487866?fromModule=lemma_inlink">同轴电缆</a>、<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%8F%8C%E7%BB%9E%E7%BA%BF/487416?fromModule=lemma_inlink">双绞线</a>及<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%85%89%E7%BC%86/6931001?fromModule=lemma_inlink">光缆</a>3大原件构成。</p>
+<p>局域网是一种私有网络，一般在一座建筑物内或建筑物附近，比如家庭、办公室或工厂。局域网络被广泛用来连接个人计算机和消费类电子设备，使它们能够共享资源和交换信息。当局域网被用于公司时，它们就称为<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E4%BC%81%E4%B8%9A%E7%BD%91%E7%BB%9C/2119389?fromModule=lemma_inlink">企业网络</a>。 </p>
+<p>局域网将一定区域内的各种计算机、外部设备和数据库连接起来形成计算机通信网，通过专用数据线路与其他地方的局域网或数据库连接，形成更大范围的信息处理系统。局域网通过网络传输介质将网络服务器、<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E7%BD%91%E7%BB%9C%E5%B7%A5%E4%BD%9C%E7%AB%99/5074726?fromModule=lemma_inlink">网络工作站</a>、打印机等网络互联设备连接起来，实现系统管理文件，共享应用软件、办公设备，发送工作日程安排等通信服务。局域网为封闭型网络，在一定程度上能够防止信息泄露和外部网络病毒攻击，具有较高的安全性，但是 一旦发生<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E9%BB%91%E5%AE%A2%E6%94%BB%E5%87%BB/996388?fromModule=lemma_inlink">黑客攻击</a>等事件，极有可能导致局域网整体出现瘫痪，网络内的所有工作无法进行，甚至泄露大量公司机密，对公司事业发展造成重创。</p>
+<h2 id="局域网的特点及分类："><a href="#局域网的特点及分类：" class="headerlink" title="局域网的特点及分类："></a>局域网的特点及分类：</h2><p>局域网一般为一个部门或单位所有，建网、维护以及扩展等较容易，系统灵活性高。其主要特点是：</p>
+<ol>
+<li>覆盖的地理范围较小，只在一个相对独立的局部范围内联，如一座或集中的建筑群内。</li>
+<li>使用专门铺设的传输介质进行联网，数据传输速率高（10Mb/s～10Gb/s）</li>
+<li>通信延迟时间短，可靠性较高</li>
+<li>局域网可以支持多种<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E4%BC%A0%E8%BE%93%E4%BB%8B%E8%B4%A8/5538029?fromModule=lemma_inlink">传输介质</a></li>
+</ol>
+<p>局域网的类型很多，若按网络使用的传输介质分类，可分为有线网和无线网；若按<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E7%BD%91%E7%BB%9C%E6%8B%93%E6%89%91%E7%BB%93%E6%9E%84/4136060?fromModule=lemma_inlink">网络拓扑结构</a>分类，可分为总线型、星型、环型、树型、混合型等；若按传输介质所使用的访问控制方法分类，又可分为以太网、令牌环网、FDDI网和无线局域网等。其中，以太网是当前应用最普遍的局域网技术。</p>
+<h2 id="无线局域网："><a href="#无线局域网：" class="headerlink" title="无线局域网："></a>无线局域网：</h2><p><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%97%A0%E7%BA%BF%E5%B1%80%E5%9F%9F%E7%BD%91/176200?fromModule=lemma_inlink">无线局域网</a>，简称WLAN，是在几千米范围内的公司楼群或是商场内的计算机互相连接所组建的计算机网络，一个无线局域网能支持几台到几千台计算机的使用。现如今无线局域网的应用已经越来越多。现在的校园、商场、公司以及高铁都在应用。无线局域网的应用为我们的生活和工作都带来很大的帮助，不仅能够快速传输人们所需要的信息，还能让人们在到联网中的联系更加快捷方便。 </p>
+<p>无线局域网近来受到非常大的欢迎，尤其是家庭、旧办公楼、食堂和其他一些安装电缆太麻烦的场地。在这些系统中，每台计算机都有一个无线<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E8%B0%83%E5%88%B6%E8%A7%A3%E8%B0%83%E5%99%A8/103486?fromModule=lemma_inlink">调制解调器</a>和一个天线，用来与其他计算机通信。在大多数情况下，每台计算机与安装在天花板上的一个设备通信。这个设备，成为<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%8E%A5%E5%85%A5%E7%82%B9/22319064?fromModule=lemma_inlink">接入点</a>、<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%97%A0%E7%BA%BF%E8%B7%AF%E7%94%B1%E5%99%A8/6056836?fromModule=lemma_inlink">无线路由器</a>或者<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%9F%BA%E7%AB%99/1260692?fromModule=lemma_inlink">基站</a>，它主要负责中继无线计算机之间的数据包，还负责中继无线计算机和Internet之间的数据包。</p>
+<p>无线局域网的一个标准称为[IEEE 802.11](<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/IEEE">https://baike.baidu.com/item/IEEE</a> 802.11/8447947?fromModule=lemma_inlink)，俗称WIFI，已经非常广泛地使用。</p>
+<h2 id="有线局域网："><a href="#有线局域网：" class="headerlink" title="有线局域网："></a>有线局域网：</h2><p><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%9C%89%E7%BA%BF%E5%B1%80%E5%9F%9F%E7%BD%91/954342?fromModule=lemma_inlink">有线局域网</a>使用了各种不同的传输技术。它们大多使用铜线作为传输介质，但也有一些使用光纤。局域网的大小受到限制，这意味着最坏情况下的传输时间也是有界的，并且事先可以知道。了解这些界限有助于网络协议的设计。通常情况下，有线局域网的运行速度在100Mbps到1Gbps之间，延迟很低（微秒或者纳秒级），而且很少发生错误。较新的局域网可以工作在高达10Gbps的速率。和无线网络相比，有线局域网在性能的所有方面都超过了它们。 </p>
+<p>许多有线局域网的拓扑结构是以点到点链路为基础的。俗称以太网的[IEEE 802.3](<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/IEEE">https://baike.baidu.com/item/IEEE</a> 802.3/3684685?fromModule=lemma_inlink)是迄今为止最常见的一种有线局域网。在<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E4%BA%A4%E6%8D%A2%E5%BC%8F%E4%BB%A5%E5%A4%AA%E7%BD%91/188374?fromModule=lemma_inlink">交换式以太网</a>中每台计算机按照<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E4%BB%A5%E5%A4%AA%E7%BD%91%E5%8D%8F%E8%AE%AE/12776893?fromModule=lemma_inlink">以太网协议</a>规定的方式运行，通过一条点到点链路连接到一个盒子，这个盒子称为<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E4%BA%A4%E6%8D%A2%E6%9C%BA/103532?fromModule=lemma_inlink">交换机</a>，这就是交换式以太网名字的由来。 </p>
+<h2 id="局域网的组建"><a href="#局域网的组建" class="headerlink" title="局域网的组建"></a>局域网的组建</h2><h3 id="组建目标："><a href="#组建目标：" class="headerlink" title="组建目标："></a>组建目标：</h3><p>无线局域网可以传输音频、视频、文字。现在很多公司和校园都在用无线局域网。不仅能够提高办公的效率，还能快速传递信息。无线局域网的组建、维护管理都非常简单，而且很少被干扰。而且还能够节省网络费用的开支。无线局域网的组建目标主要有两个标准：第一，灵活性和独立性较强。无线局域网的部件的和相关设备的摆放不受任何空间限制。用户在连接到无线局域网以后。可以用自己是手机或笔记本等设备与系统网络进行连接，也不会影响到无线局域网的正常使用。第二，扩展性和先进性好。无线局域网的组建结构是非常简单。它会随着现在科技信息技术的发展而进行更新，提升性能和升级系统，从而使得信息传输更加快速。</p>
+<h3 id="在日常生活中的应用："><a href="#在日常生活中的应用：" class="headerlink" title="在日常生活中的应用："></a>在日常生活中的应用：</h3><p>无线局域网的实现协议众多，当前最广泛使用的当属Wi-Fi，只需要一个路由器，即可以达到让所有具有无线功能的设备组成一个无线局域网，非常方便灵活。 目前大多数无线局域网是基于IEEE802.11标准，在这个标准下的无线局域网大多使用的是2.4GHz 或5GHz的射频。 家庭一般只需要一个路由器就可以组建小型的无线局域网络，中等规模的企业通过多个路由器以及交换机， 就能组建覆盖整个企业的中型无线局域网络，而大型企业则是需要通过一些中心化的<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%97%A0%E7%BA%BF%E6%8E%A7%E5%88%B6%E5%99%A8/1319032?fromModule=lemma_inlink">无线控制器</a>来组建强大的覆盖面广的大型无线局域网络。</p>
+<h3 id="在不同行业中的应用："><a href="#在不同行业中的应用：" class="headerlink" title="在不同行业中的应用："></a>在不同行业中的应用：</h3><p>无线局域网在医院中的应用对于医疗工作有很大的帮助，医生在查房时，需要随时查看患者的病例，然后会看患者当时的病情在下医嘱。在使用无线网络以后，医生查房时可以携带能够连接无线网络的平板电脑，随时查看患者的病例，并记录患者当时的病情。无线局域网不仅能为医生和病人提供上网服务，在医院的病人家属和访客都能享受到无线网络的快捷和便利。利用无线网络的定位服务在医院的应用也非常有帮助，医生能够及时定位到患者的位置。当患者出现紧急状况时能够得到及时抢治疗。另外，利用<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%97%A0%E7%BA%BF%E5%AE%9A%E4%BD%8D/10182432?fromModule=lemma_inlink">无线定位</a>还可以随时知道药品的具体位置，相关人员在管理药品的库存时更加精确和方便。 </p>
+<p>金融行业网点众多，建议采用 AC+瘦AP的组网架构，以便于WLAN网络统一管理。前期布网可考虑与运营商进行合作，以减少建设投资。AP的布放需要结合实际环境，如面积、楼层等做具体的适应性调整，部署范围应覆盖电子银行服务区、营业大厅、客户等候区、VIP 客户接待区、理财专区等所有客户有权到达的区域，同时将无线控制器AC部署在核心机房，无线控制器通过N*GE链路旁挂或者在线部署在运营商汇聚交换机或者核心设备上。 </p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Stephen Qiu</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://stephenqhd30.github.io/2023/041716160.html">https://stephenqhd30.github.io/2023/041716160.html</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">Stephen Qiu</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Linux/">
+                                    <span class="chip bg-color">Linux</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2023/041716160.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="三机ping通和什么是局域网">
+                        
+                        <span class="card-title">三机ping通和什么是局域网</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            不是我跑去了整形，只是我拿出真心~
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-17
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E4%B8%80%E4%BA%9B%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F%E7%9A%84%E5%B0%8F%E6%8A%80%E8%83%BD/" class="post-category">
+                                    一些乱七八糟的小技能
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Linux/">
+                        <span class="chip bg-color">Linux</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2023/041749606.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="桥接的方法">
+                        
+                        <span class="card-title">桥接的方法</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            没有谁能够将你代替，因为时间已忘记~~~
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-17
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E4%B8%80%E4%BA%9B%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F%E7%9A%84%E5%B0%8F%E6%8A%80%E8%83%BD/" class="post-category">
+                                    一些乱七八糟的小技能
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Linux/">
+                        <span class="chip bg-color">Linux</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+
+  <!-- 是否加载使用自带的 prismjs. -->
+  <script type="text/javascript" src="/libs/prism/prism.min.js"></script>
+
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2023</span>
+            
+            <a href="/about" target="_blank">Stephen Qiu</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                        class="white-color">12.7k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+                <span id="sitetime"> Loading ...</span>
+                <script>
+                    var calcSiteTime = function () {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2023";
+                        var startMonth = "4";
+                        var startDate = "8";
+                        var startHour = "0";
+                        var startMinute = "0";
+                        var startSecond = "0";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+
+                        // 区分是否有年份.
+                        var language = 'zh-CN';
+                        if (startYear === String(todayYear)) {
+                            document.getElementById("year").innerHTML = todayYear;
+                            var daysTip = 'This site has been running for ' + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                daysTip = '本站已运行 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                daysTip = '本站已運行 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = daysTip;
+                        } else {
+                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
+                                + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
+                        }
+                    }
+
+                    calcSiteTime();
+                </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/Stephenqhd30" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:Stephenqhd@outlook.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2680860645" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2680860645" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 白天和黑夜主题 -->
+<div class="stars-con">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>  
+</div>
+
+<script>
+    function switchNightMode() {
+        $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($('body')),
+        setTimeout(function () {
+            $('body').hasClass('DarkMode') 
+            ? ($('body').removeClass('DarkMode'), localStorage.setItem('isDark', '0'), $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')) 
+            : ($('body').addClass('DarkMode'), localStorage.setItem('isDark', '1'), $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')),
+            
+            setTimeout(function () {
+            $('.Cuteen_DarkSky').fadeOut(1e3, function () {
+                $(this).remove()
+            })
+            }, 2e3)
+        })
+    }
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    
+
+    
+
+    <!-- 雪花特效 -->
+    
+
+    <!-- 鼠标星星特效 -->
+    
+
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+<!-- 雪花特效
+<script type="text/javascript" src="\js\snow.js"></script> -->
+
+
+</html>
