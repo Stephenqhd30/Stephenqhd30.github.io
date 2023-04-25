@@ -6,7 +6,7 @@
   <link href="https://stephenqhd30.github.io/atom.xml" rel="self"/>
   
   <link href="https://stephenqhd30.github.io/"/>
-  <updated>2023-04-17T14:53:44.491Z</updated>
+  <updated>2023-04-25T08:17:27.282Z</updated>
   <id>https://stephenqhd30.github.io/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JavaScript笔记整理</title>
+    <link href="https://stephenqhd30.github.io/2023/04252938.html"/>
+    <id>https://stephenqhd30.github.io/2023/04252938.html</id>
+    <published>2023-04-25T08:04:13.000Z</published>
+    <updated>2023-04-25T08:17:27.282Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;「学习笔记」JavaScript基础&quot;&gt;&lt;a href=&quot;#「学习笔记」JavaScript基础&quot; class=&quot;headerlink&quot; title=&quot;「学习笔记」JavaScript基础&quot;&gt;&lt;/a&gt;「学习笔记」JavaScript基础&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="记录一下HTML的学习" scheme="https://stephenqhd30.github.io/categories/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8BHTML%E7%9A%84%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="Linux" scheme="https://stephenqhd30.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTML笔记的整理</title>
+    <link href="https://stephenqhd30.github.io/2023/042516994.html"/>
+    <id>https://stephenqhd30.github.io/2023/042516994.html</id>
+    <published>2023-04-25T07:42:07.000Z</published>
+    <updated>2023-04-25T07:53:37.077Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;学习笔记」HTML基础&quot;&gt;&lt;a href=&quot;#学习笔记」HTML基础&quot; class=&quot;headerlink&quot; title=&quot;学习笔记」HTML基础&quot;&gt;&lt;/a&gt;学习笔记」HTML基础&lt;/h1&gt;&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="记录一下HTML的学习" scheme="https://stephenqhd30.github.io/categories/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8BHTML%E7%9A%84%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="Linux" scheme="https://stephenqhd30.github.io/tags/Linux/"/>
+    
+  </entry>
   
   <entry>
     <title>信息的主动收集和被动收集</title>

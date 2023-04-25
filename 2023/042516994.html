@@ -1,0 +1,1837 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="HTML">
+    <meta name="description" content="角落那窗口闻得到玫瑰花香">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>HTML笔记的整理 | Every Day is a Pawn</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+    
+
+
+    <!-- bg-cover style     -->
+
+
+
+<link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+<link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+<link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+<link rel="stylesheet" type="text/css" href="/css/matery.css">
+<link rel="stylesheet" type="text/css" href="/css/my.css">
+<link rel="stylesheet" type="text/css" href="/css/dark.css" media="none" onload="if(media!='all')media='all'">
+
+
+
+
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+    <link rel="stylesheet" href="/css/post.css">
+
+
+
+
+    
+
+
+
+    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="Every Day is a Pawn" type="application/atom+xml">
+</head>
+
+
+<body>
+
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Every Day is a Pawn</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+  <li>
+    <a href="javascript:;" class="waves-effect waves-light" onclick="switchNightMode()" title="深色/浅色模式" >
+      <i id="sum-moon-icon" class="fas fa-sun" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Every Day is a Pawn</div>
+        <div class="logo-desc">
+            
+            You can look back, but don&#39;t walk back
+            
+        </div>
+    </div>
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title">HTML笔记的整理</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Linux/">
+                                <span class="chip bg-color">Linux</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8BHTML%E7%9A%84%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                记录一下HTML的学习
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2023-04-25
+                </div>
+                
+
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2023-04-25
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    8.9k
+                </div>
+                
+
+                
+
+                
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.min.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="学习笔记」HTML基础"><a href="#学习笔记」HTML基础" class="headerlink" title="学习笔记」HTML基础"></a>学习笔记」HTML基础</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>  勤做笔记不仅可以让自己学的扎实，更重要的是可以让自己少走弯路。有人说:”再次翻开笔记是什么感觉”，我的回答是:”初恋般的感觉”。或许笔记不一定十全十美，但肯定会让你有种初恋般的怦然心动。💖💖<br>          本章着重复习Html的基础内容，学习Html究竟要学些什么呢？主要是学习各种标签，来搭建网页的“结构”。✨✨<br>          本篇文章主要由五个章节构成，从WEB标准到初识HTML，接着学习HTML常用标签，最后学习表格列表和表单。💪💪开始充电之旅啦~~~</p>
+<h2 id="一、认识WEB"><a href="#一、认识WEB" class="headerlink" title="一、认识WEB"></a>一、认识WEB</h2><p><strong>「网页」</strong>主要是由<code>文字</code>、<code>图像</code>和<code>超链接</code>等元素构成，当然除了这些元素，网页中还可以包括音频、视频以及Flash等。</p>
+<p><strong>「浏览器」</strong>是网页显示、运行的平台。</p>
+<p><strong>「浏览器内核」</strong>(排版引擎、解释引擎、渲染引擎)</p>
+<blockquote>
+<p>负责读取网页内容，整理讯息，计算网页的显示方式并显示页面。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th align="left">浏览器</th>
+<th align="center">内核</th>
+<th align="left">备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">IE</td>
+<td align="center">Trident</td>
+<td align="left">IE、猎豹安全、360极速浏览器、百度浏览器</td>
+</tr>
+<tr>
+<td align="left">Firefox</td>
+<td align="center">Gecko</td>
+<td align="left">可惜这几年已经没落了，打开速度慢、升级频繁、猪一样的队友flash、神一样的对手chrome。</td>
+</tr>
+<tr>
+<td align="left">Safari</td>
+<td align="center">webkit</td>
+<td align="left">现在很多人错误地把 webkit 叫做 chrome内核（即使 chrome内核已经是 blink 了）。苹果感觉像被别人抢了媳妇，都哭晕在厕所里面了。</td>
+</tr>
+<tr>
+<td align="left">chrome</td>
+<td align="center">Chromium/Blink</td>
+<td align="left">在 Chromium 项目中研发 Blink 渲染引擎（即浏览器核心），内置于 Chrome 浏览器之中。Blink 其实是 WebKit 的分支。大部分国产浏览器最新版都采用Blink内核。二次开发</td>
+</tr>
+<tr>
+<td align="left">Opera</td>
+<td align="center">blink</td>
+<td align="left">现在跟随chrome用blink内核。</td>
+</tr>
+</tbody></table>
+<h3 id="Web标准"><a href="#Web标准" class="headerlink" title="Web标准"></a>Web标准</h3><p><strong>「构成」</strong>👉 <strong>结构标准，表现标准和行为标准</strong></p>
+<ul>
+<li>结构标准用于对网页元素进行整理和分类(HTML)</li>
+<li>表现标准用于设置网页元素的版式、颜色、大小等外观属性(CSS)</li>
+<li>行为标准用于对网页模型的定义及交互的编写(JavaScript)</li>
+</ul>
+<p><strong>「Web标准的优点」</strong>👇</p>
+<ul>
+<li>易于维护：只需更改CSS文件，就可以改变整站的样式</li>
+<li>页面响应快：HTML文档体积变小，响应时间短</li>
+<li>可访问性：语义化的HTML（结构和表现相分离的HTML）编写的网页文件，更容易被屏幕阅读器识别</li>
+<li>设备兼容性：不同的样式表可以让网页在不同的设备上呈现不同的样式</li>
+<li>搜索引擎：语义化的HTML能更容易被搜索引擎解析，提升排名</li>
+</ul>
+<hr>
+<h2 id="二、HTML初识"><a href="#二、HTML初识" class="headerlink" title="二、HTML初识"></a>二、HTML初识</h2><h3 id="HTML初识"><a href="#HTML初识" class="headerlink" title="HTML初识"></a>HTML初识</h3><p><strong>「HTML」</strong>(Hyper Text Markup Language):超文本标记语言</p>
+<p><strong>「所谓超文本，有2层含义：」</strong></p>
+<ul>
+<li>因为它可以加入图片、声音、动画、多媒体等内容（超越文本限制 ）</li>
+<li>不仅如此，它还可以从一个文件跳转到另一个文件，与世界各地主机的文件连接（超级链接文本）。</li>
+</ul>
+<p><strong>「HTML骨架格式」</strong></p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token comment">&lt;!-- 页面中最大的标签 根标签 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- 头部标签 --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>     
+        <span class="token comment">&lt;!-- 标题标签 --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span> 
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- 文档的主体 --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>「团队约定大小写」</strong></p>
+<ul>
+<li>HTML标签名、类名、标签属性和大部分属性值统一用小写</li>
+</ul>
+<p><strong>「HTML元素标签分类」</strong></p>
+<ul>
+<li>常规元素(双标签)</li>
+<li>空元素(单标签)</li>
+</ul>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">常规元素(双标签)
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>标签名</span><span class="token punctuation">&gt;</span></span> 内容 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>标签名</span><span class="token punctuation">&gt;</span></span>   比如<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>我是文字<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+
+空元素(单标签)
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>标签名</span> <span class="token punctuation">/&gt;</span></span>  比如 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span> <span class="token punctuation">/&gt;</span></span>或<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>br</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>「HTML标签关系」</strong></p>
+<ul>
+<li><p>嵌套关系父子级包含关系</p>
+</li>
+<li><p>并列关系兄弟级并列关系</p>
+</li>
+<li><ul>
+<li>如果两个标签之间的关系是嵌套关系，子元素最好缩进一个tab键的身位（一个tab是4个空格）。如果是并列关系，最好上下对齐。</li>
+</ul>
+</li>
+</ul>
+<h3 id="文档类型-lt-DOCTYPE-gt"><a href="#文档类型-lt-DOCTYPE-gt" class="headerlink" title="文档类型< !DOCTYPE >"></a>文档类型&lt; !DOCTYPE &gt;</h3><p><strong>「文档类型」</strong>用来说明你用的XHTML或者HTML是什么版本。告诉浏览器按照HTML5标准解析页面。</p>
+<h3 id="页面语言lang"><a href="#页面语言lang" class="headerlink" title="页面语言lang"></a>页面语言lang</h3><p>lang指定该html标签内容所用的语言</p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>  
+en 定义语言为英语 zh-CN定义语言为中文<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p><strong>「lang的作用」</strong></p>
+<ul>
+<li>根据根据lang属性来设定不同语言的css样式，或者字体</li>
+<li>告诉搜索引擎做精确的识别</li>
+<li>让语法检查程序做语言识别</li>
+<li>帮助翻译工具做识别</li>
+<li>帮助网页阅读程序做识别</li>
+</ul>
+<h3 id="字符集"><a href="#字符集" class="headerlink" title="字符集"></a>字符集</h3><p><strong>「字符集」</strong>(Character set)是多个字符的集合,计算机要准确的处理各种字符集文字，需要进行字符编码，以便计算机能够识别和存储各种文字。</p>
+<ul>
+<li>UTF-8是目前最常用的字符集编码方式</li>
+<li>让 html 文件是以 UTF-8 编码保存的， 浏览器根据编码去解码对应的html内容。</li>
+</ul>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><strong>「meta viewport的用法」</strong><br>  通常viewport是指视窗、视口。浏览器上(也可能是一个app中的webview)用来显示网页的那部分区域。在移动端和pc端视口是不同的，pc端的视口是浏览器窗口区域，而在移动端有三个不同的视口概念：布局视口、视觉视口、理想视口</p>
+<p>  meta有两个属性name 和 http-equiv</p>
+<p><strong>name属性的取值</strong></p>
+<ul>
+<li>keywords(关键字) 告诉搜索引擎，该网页的关键字</li>
+<li>description(网站内容描述) 用于告诉搜索引擎，你网站的主要内容。</li>
+<li>viewport(移动端的窗口)</li>
+<li>robots(定义搜索引擎爬虫的索引方式) robots用来告诉爬虫哪些页面需要索引，哪些页面不需要索引</li>
+<li>author(作者)</li>
+<li>generator(网页制作软件）</li>
+<li>copyright(版权)</li>
+</ul>
+<p><strong>http-equiv有以下参数</strong></p>
+<p>http-equiv相当于http的文件头作用，它可以向浏览器传回一些有用的信息，以帮助正确和精确地显示网页内容</p>
+<ul>
+<li>content-Type 设定网页字符集(Html4用法，不推荐)</li>
+<li>Expires(期限) ,可以用于设定网页的到期时间。一旦网页过期，必须到服务器上重新传输。</li>
+<li>Pragma(cache模式),是用于设定禁止浏览器从本地机的缓存中调阅页面内容，设定后一旦离开网页就无法从Cache中再调出</li>
+<li>Refresh(刷新),自动刷新并指向新页面。</li>
+<li>cache-control（请求和响应遵循的缓存机制）</li>
+</ul>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>viewport<span class="token punctuation">"</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>width=device-width, initial-scale=1.0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="HTML标签的语义化"><a href="#HTML标签的语义化" class="headerlink" title="HTML标签的语义化"></a>HTML标签的语义化</h3><ul>
+<li>方便代码的阅读和维护，样式丢失的时候能让页面呈现清晰的结构。</li>
+<li>有利于SEO，搜索引擎根据标签来确定上下文和各个关键字的权重。</li>
+<li>方便其他设备解析，如盲人阅读器根据语义渲染网页</li>
+</ul>
+<p><strong>「拓展」</strong> 标签：规定页面上所有链接的默认 URL 和设置整体链接的打开状态</p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>base</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.baidu.com<span class="token punctuation">"</span></span> <span class="token attr-name">target</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>_blank<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>base</span> <span class="token attr-name">target</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>_self<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>测试<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span> 跳转到 百度
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<h2 id="HTML常用标签"><a href="#HTML常用标签" class="headerlink" title="HTML常用标签"></a>HTML常用标签</h2><h3 id="常用标签"><a href="#常用标签" class="headerlink" title="常用标签"></a>常用标签</h3><p><strong>「1. 排版标签」</strong>主要和css搭配使用，显示网页结构的标签，是网页布局最常用的标签。</p>
+<ul>
+<li>标题标签h(h1~h6)</li>
+<li>段落标签p,可以把 HTML 文档分割为若干段落</li>
+<li>水平线标签hr</li>
+<li>换行标签br</li>
+<li>div和span标签:是没有语义的,是我们网页布局最主要的2个盒子。</li>
+</ul>
+<p><strong>「2. 排版标签」</strong></p>
+<ul>
+<li>b和strong 文字以粗体显示</li>
+<li>i和em 文字以斜体显示</li>
+<li>s和del 文字以加删除线显示</li>
+<li>u和ins 文字以加下划线显示</li>
+</ul>
+<p><strong>「3. 标签属性(行内式)」</strong></p>
+<p>使用HTML制作网页时，如果想让HTML标签提供更多的信息，可以使用HTML标签的属性加以设置。</p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>标签名</span> <span class="token attr-name">属性1</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>属性值1<span class="token punctuation">"</span></span> <span class="token attr-name">属性2</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>属性值2<span class="token punctuation">"</span></span> <span class="token attr-name">…</span><span class="token punctuation">&gt;</span></span> 内容 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>标签名</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>手机</span> <span class="token attr-name">颜色</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>红色<span class="token punctuation">"</span></span> <span class="token attr-name">大小</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>5寸<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>手机</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p><strong>「4. 图像标签img」</strong></p>
+<p><strong>注意：</strong></p>
+<ul>
+<li>标签可以拥有多个属性，必须写在开始标签中，位于标签名后面。</li>
+<li>属性之间不分先后顺序，标签名与属性、属性与属性之间均以空格分开。</li>
+<li>采取  键值对 的格式  key=”value”  的格式</li>
+</ul>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>cz.jpg<span class="token punctuation">"</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>300<span class="token punctuation">"</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>300<span class="token punctuation">"</span></span> <span class="token attr-name">border</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>3<span class="token punctuation">"</span></span> <span class="token attr-name">title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>这是个小蒲公英<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><strong>「5. 链接标签(重点)」</strong></p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>跳转目标<span class="token punctuation">"</span></span> <span class="token attr-name">target</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>目标窗口的弹出方式<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>文本或图像<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+target="_self"  默认窗口弹出方式
+target="_blank" 新窗口弹出<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">href</td>
+<td align="left">用于指定链接目标的url地址，（必须属性）当为标签应用href属性时，它就具有了超链接的功能</td>
+</tr>
+<tr>
+<td align="left">target</td>
+<td align="left">用于指定链接页面的打开方式，其取值有_self和_blank两种，其中_self为默认值，_blank为在新窗口中打开方式。</td>
+</tr>
+</tbody></table>
+<p><strong>src 和 href 的区别</strong></p>
+<p>一句话概括:<strong>src 是引入资源的 href 是跳转url的</strong></p>
+<ol>
+<li>src用于替换当前元素，href用于在当前文档和引用资源之间确立联系。</li>
+<li>src是source的缩写，指向外部资源的位置，指向的内容将会嵌入到文档中当前标签所在位置；在请求src资源时会将其指向的资源下载并应用到文档内，例如js脚本，img图片和frame等元素。当浏览器解析到该元素时，会暂停其他资源的下载和处理，直到将该资源加载、编译、执行完毕，图片和框架等元素也如此，类似于将所指向资源嵌入当前标签内。这也是为什么将js脚本放在底部而不是头部。</li>
+<li>href是Hypertext Reference的缩写，指向网络资源所在位置，建立和当前元素（锚点）或当前文档（链接）之间的链接。如果我们在文档中添加那么浏览器会识别该文档为css文件，就会并行下载资源并且不会停止对当前文档的处理。这也是为什么建议使用link方式来加载css，而不是使用@import方式。</li>
+</ol>
+<p><strong>注意：</strong></p>
+<ol>
+<li>外部链接 需要添加 http:// <a target="_blank" rel="noopener" href="http://www.baidu.com/">www.baidu.com</a></li>
+<li>内部链接 直接链接内部页面名称即可 比如 &lt; a href=”index.html”&gt; 首页</li>
+<li>如果当时没有确定链接目标时，通常将链接标签的href属性值定义为“#”(即href=”#”)，表示该链接暂时为一个空链接。</li>
+<li>不仅可以创建文本超链接，在网页中各种网页元素，如图像、表格、音频、视频等都可以添加超链接。</li>
+</ol>
+<p><strong>锚点定位：通过创建锚点链接，用户能够快速定位到目标内容。</strong></p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">1. 使用相应的id名标注跳转目标的位置。 (找目标)
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>two<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>第2集<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span> 
+
+2. 使用<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#id名<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>链接文本<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>创建链接文本（被点击的） 
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#two<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>   <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>「6. 注释标签」</strong></p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token comment">&lt;!-- 注释语句 --&gt;</span>     
+ 快捷键是：    ctrl + /       
+ 或者 ctrl +shift + / <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>团队约定：</strong>注释内容前后各一个空格字符，注释位于要注释代码的上面，单独占一行</p>
+<p><strong>「7. 路径」</strong></p>
+<p><img src="/2023/042516994/640.png" alt="图片"><strong>「8. 其他知识」</strong></p>
+<p>预格式化文本pre标签元素中的文本通常会保留空格和换行符。而文本也会呈现为等宽字体。格式化文本就是 ，按照我们预先写好的文字格式来显示页面， 保留空格和换行等。</p>
+<p>特殊字符<img src="/2023/042516994/640-1682406907122-1.png" alt="图片">什么是XHTML</p>
+<ul>
+<li>XHTML 指<strong>「可扩展超文本标签语言」</strong>（EXtensible HyperText Markup Language）。</li>
+<li>XHTML 的目标是取代 HTML。</li>
+<li>XHTML 与 HTML 4.01 几乎是相同的。</li>
+<li>XHTML 是更严格更纯净的 HTML 版本。</li>
+<li>XHTML 是作为一种 XML 应用被重新定义的 HTML,是严格版本的HTML。例如它要求标签必须小写，标签必须被正确关闭，标签顺序必须正确排列，对于属性都必须使用双引号等。</li>
+<li>XHTML 是一个 W3C 标准。</li>
+</ul>
+<p><strong>写HTML代码时应注意什么？</strong></p>
+<ul>
+<li>尽可能少的使用无语义的标签div和span；</li>
+<li>在语义不明显时，既可以使用div或者p时，尽量用p, 因为p在默认情况下有上下间距，对兼容特殊终端有利；</li>
+<li>不要使用纯样式标签，如：b、font、u等，改用css设置。</li>
+<li>需要强调的文本，可以包含在strong或者em标签中（浏览器预设样式，能用CSS指定就不用他们），strong默认样式是加粗（不要用b），em是斜体（不用i）；</li>
+<li>使用表格时，标题要用caption，表头用thead，主体部分用tbody包围，尾部用tfoot包围。表头和一般单元格要区分开，表头用th，单元格用td；</li>
+<li>表单域要用fieldset标签包起来，并用legend标签说明表单的用途；</li>
+<li>每个input标签对应的说明文本都需要使用label标签，并且通过为input设置id属性，在lable标签中设置for来让说明文本和相对应的input关联起来。</li>
+</ul>
+<hr>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><p><strong>「1. 表格」</strong></p>
+<p>现在还是较为常用的一种标签，但不是用来布局，常见显示、展示表格式数据。因为它可以让数据显示的非常的规整，可读性非常好。特别是后台展示数据的时候表格运用是否熟练就显得很重要，一个清爽简约的表格能够把繁杂的数据表现得很有条理。</p>
+<p><strong>「2. 创建表格」</strong></p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>tr</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>td</span><span class="token punctuation">&gt;</span></span>单元格内的文字<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>td</span><span class="token punctuation">&gt;</span></span>
+    ...
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>tr</span><span class="token punctuation">&gt;</span></span>
+  ...
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>table、tr、td，他们是创建表格的基本标签，缺一不可</p>
+<ul>
+<li>table用于定义一个表格标签。</li>
+<li>tr标签 用于定义表格中的行，必须嵌套在 table标签中。</li>
+<li>td 用于定义表格中的单元格，必须嵌套在&lt; tr &gt;&lt;/ tr&gt;标签中。</li>
+<li>字母 td 指表格数据（table data），即数据单元格的内容，现在我们明白，表格最合适的地方就是用来存储数据的。td像一个容器，可以容纳所有的元素。</li>
+</ul>
+<p><strong>表头单元格标签th</strong>:一般表头单元格位于表格的第一行或第一列，并且文本加粗居中,只需用表头标签&lt; th&gt;&lt;/ th&gt;替代相应的单元格标签&lt; td&gt;&lt;/ td&gt;即可。</p>
+<p><strong>表格标题caption</strong>通常这个标题会被居中且显示于表格之上。caption 标签必须紧随 table 标签之后。这个标签只存在 表格里面才有意义。你是风儿我是沙</p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>table</span><span class="token punctuation">&gt;</span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>caption</span><span class="token punctuation">&gt;</span></span>我是表格标题<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>caption</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>table</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>「3. 表格属性」</strong></p>
+<p>三参为0，平时开发的我们这三个参数   border  cellpadding  cellspacing 为  0</p>
+<p><strong>「4. 合并单元格」</strong>,合并的顺序我们按照  先上 后下   先左  后右 的顺序 ,合并完之后需要删除多余的单元格。</p>
+<ul>
+<li>跨行合并：rowspan=”合并单元格的个数”</li>
+<li>跨列合并：colspan=”合并单元格的个数”</li>
+</ul>
+<p><strong>「5. 总结表格」</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">标签名</th>
+<th align="left">定义</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">&lt; table&gt;&lt;/ table&gt;</td>
+<td align="left">表格标签</td>
+<td align="left">就是一个四方的盒子</td>
+</tr>
+<tr>
+<td align="left">&lt; tr&gt;&lt;/ tr&gt;</td>
+<td align="left">表格行标签</td>
+<td align="left">行标签要再table标签内部才有意义</td>
+</tr>
+<tr>
+<td align="left">&lt; td&gt;&lt;/ td&gt;</td>
+<td align="left">单元格标签</td>
+<td align="left">单元格标签是个容器级元素，可以放任何东西</td>
+</tr>
+<tr>
+<td align="left">&lt; th&gt;&lt;/ th&gt;</td>
+<td align="left">表头单元格标签</td>
+<td align="left">它还是一个单元格，但是里面的文字会居中且加粗</td>
+</tr>
+<tr>
+<td align="left">&lt; caption&gt;&lt;/ caption&gt;</td>
+<td align="left">表格标题标签</td>
+<td align="left">表格的标题，跟着表格一起走，和表格居中对齐</td>
+</tr>
+<tr>
+<td align="left">colspan 和 rowspan</td>
+<td align="left">合并属性</td>
+<td align="left">用来合并单元格的</td>
+</tr>
+</tbody></table>
+<p><strong>「6. 表格划分结构」</strong></p>
+<p>  对于比较复杂的表格，表格的结构也就相对的复杂了，所以又将表格分割成三个部分：题头、正文和脚注。而这三部分分别用:thead,tbody,tfoot来标注， 这样更好的分清表格结构。</p>
+<p><strong>注意：</strong><br>1.&lt; thead&gt;&lt;/ thead&gt;：用于定义表格的头部。用来放标题之类的东西。 内部必须拥有 标签！</p>
+<ol start="2">
+<li>&lt; tbody&gt;&lt;/ tbody&gt;：用于定义表格的主体。放数据本体 。</li>
+<li>&lt; tfoot&gt;&lt;/ tfoot&gt;放表格的脚注之类。</li>
+<li>以上标签都是放到table标签中。</li>
+</ol>
+<hr>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p><strong>「列表ul」</strong>容器里面装载着结构，样式一致的文字或图表的一种形式，叫列表。</p>
+<p>列表最大的特点就是整齐 、整洁、 有序，跟表格类似，但是它可组合自由度会更高。</p>
+<p><strong>「1. 无序列表 ul」</strong></p>
+<ul>
+<li><ul></ul>中只能嵌套</li><li></li>，直接在<ul></ul>标签中输入其他标签或者文字的做法是不被允许的。
+
+<li><p>&lt; li&gt;与&lt;/ li&gt;之间相当于一个容器，可以容纳所有元素。</p>
+</li>
+</ul>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>列表项1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>列表项2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>列表项3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+  ......
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>「2. 有序列表 ol」</strong></p>
+<ul>
+<li><ol>标签中的type属性值为排序的序列号，不添加type属性时，有序列表默认从数字1开始排序。
+</ol></li>
+<li><p>常用的type属性值分别为是1，a，A，i，I</p>
+</li>
+<li><ol reversed="reversed">中的reversed属性能够让有序列表中的序列倒序排列。
+</ol></li>
+<li><ol start="3">中的start属性值为3，有序列表中的第一个序列号将从3开始排列。</ol></li>
+</ul>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ol</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>A<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span> 
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>列表项1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>列表二<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span><span class="token punctuation">&gt;</span></span>列表三<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ol</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>「2. 自定义列表 dl」</strong></p>
+<ul>
+<li>定义列表常用于对术语或名词进行解释和描述，定义列表的列表项前没有任何项目符号。</li>
+</ul>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dl</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dt</span><span class="token punctuation">&gt;</span></span>名词1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dt</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dd</span><span class="token punctuation">&gt;</span></span>名词1解释1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dd</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dd</span><span class="token punctuation">&gt;</span></span>名词1解释2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dd</span><span class="token punctuation">&gt;</span></span>
+  ...
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dt</span><span class="token punctuation">&gt;</span></span>名词2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dt</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dd</span><span class="token punctuation">&gt;</span></span>名词2解释1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dd</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dd</span><span class="token punctuation">&gt;</span></span>名词2解释2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dd</span><span class="token punctuation">&gt;</span></span>
+  ...
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dl</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<h2 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h2><p>在HTML中，一个完整的表单通常由表单控件（也称为表单元素）、提示信息和表单域3个部分构成。表单目的是为了收集用户信息。</p>
+<p><strong>表单控件：</strong><br> 包含了具体的表单功能项，如单行文本输入框、密码输入框、复选框、提交按钮、重置按钮等。</p>
+<p><strong>提示信息：</strong><br> 一个表单中通常还需要包含一些说明性的文字，提示用户进行填写和操作。</p>
+<p><strong>表单域：</strong><br> 它相当于一个容器，用来容纳所有的表单控件和提示信息，可以通过他定义处理表单数据所用程序的url地址，以及数据提交到服务器的方法。如果不定义表单域，表单中的数据就无法传送到后台服务器。</p>
+<p><strong>「1. input 控件」</strong></p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>属性值<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>你好<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<ul>
+<li>input 输入的意思</li>
+<li>&lt; input /&gt;标签为单标签</li>
+<li>type属性设置不同的属性值用来指定不同的控件类型</li>
+<li>除了type属性还有别的属性</li>
+</ul>
+<p><strong>常用属性：</strong></p>
+<p><img src="/2023/042516994/640-1682406907122-2.png" alt="图片"></p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">用户名: <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span> 
+密  码：<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>password<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p><strong>value属性</strong></p>
+<ul>
+<li>value 默认的文本值。有些表单想刚打开页面就默认显示几个文字，就可以通过这个value 来设置。</li>
+</ul>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">用户名:<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span>  <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>username<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>请输入用户名<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span> <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><strong>name属性</strong></p>
+<ul>
+<li><p>name表单的名字， 这样，后台可以通过这个name属性找到这个表单。 页面中的表单很多，name主要作用就是用于区别不同的表单。</p>
+</li>
+<li><ul>
+<li>name属性后面的值，是我们自己定义的。</li>
+<li>radio  如果是一组，我们必须给他们命名相同的名字 name  这样就可以多个选其中的一个啦</li>
+<li>name属性，我们现在用的较少，但是，当我们学ajax 和后台的时候，是必须的。</li>
+</ul>
+</li>
+</ul>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>radio<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sex<span class="token punctuation">"</span></span>  <span class="token punctuation">/&gt;</span></span>男
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>radio<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sex<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>女<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p><strong>checked属性</strong></p>
+<ul>
+<li>表示默认选中状态。 较常见于 单选按钮和复选按钮。</li>
+</ul>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">性    别:
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>radio<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sex<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>男<span class="token punctuation">"</span></span> <span class="token attr-name">checked</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>checked<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>男
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>radio<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sex<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>女<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>女 <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>input 属性小结</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">说明</th>
+<th align="left">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">type</td>
+<td align="left">表单类型</td>
+<td align="left">用来指定不同的控件类型</td>
+</tr>
+<tr>
+<td align="left">value</td>
+<td align="left">表单值</td>
+<td align="left">表单里面默认显示的文本</td>
+</tr>
+<tr>
+<td align="left">name</td>
+<td align="left">表单名字</td>
+<td align="left">页面中的表单很多，name主要作用就是用于区别不同的表单。</td>
+</tr>
+<tr>
+<td align="left">checked</td>
+<td align="left">默认选中</td>
+<td align="left">表示那个单选或者复选按钮一开始就被选中了</td>
+</tr>
+</tbody></table>
+<p><strong>「2.  label标签」</strong></p>
+<ul>
+<li>label 标签为 input 元素定义标注（标签）。</li>
+<li>label标签主要目的是为了提高用户体验。为用户提高最优秀的服务。</li>
+</ul>
+<p><strong>作用：</strong>用于绑定一个表单元素, 当点击label标签的时候, 被绑定的表单元素就会获得输入焦点。</p>
+<p><strong>如何绑定元素呢</strong></p>
+<ul>
+<li>第一种用法就是用label标签直接包含input表单， 适合单个表单选择</li>
+<li>第二种用法 for 属性规定 label 与哪个表单元素绑定(通过id)。</li>
+</ul>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">第一种
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span><span class="token punctuation">&gt;</span></span> 用户名： 
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>radio<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>usename<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>请输入用户名<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>   
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+
+第二种
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sex<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>男<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>radio<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sex<span class="token punctuation">"</span></span>  <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sex<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>「3.  textarea控件(文本域)」</strong></p>
+<ul>
+<li>通过textarea控件可以轻松地创建多行文本输入框.</li>
+<li>cols=”每行中的字符数” rows=”显示的行数”  我们实际开发不用</li>
+</ul>
+<p><img src="/2023/042516994/640-1682406907123-3.png" alt="图片"></p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>textarea</span> <span class="token punctuation">&gt;</span></span>
+  文本内容
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>textarea</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>文本框和文本域区别</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">表单</th>
+<th align="center">名称</th>
+<th align="center">区别</th>
+<th align="right">默认值显示</th>
+<th align="right">用于场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">input type=”text”</td>
+<td align="center">文本框</td>
+<td align="center">只能显示一行文本</td>
+<td align="right">单标签，通过value显示默认值</td>
+<td align="right">用户名、昵称、密码等</td>
+</tr>
+<tr>
+<td align="left">textarea</td>
+<td align="center">文本域</td>
+<td align="center">可以显示多行文本</td>
+<td align="right">双标签，默认值写到标签中间</td>
+<td align="right">留言板</td>
+</tr>
+</tbody></table>
+<p><strong>「4.  select下拉列表」</strong></p>
+<ul>
+<li>如果有多个选项让用户选择，为了节约空间，我们可以使用select控件定义下拉列表。</li>
+<li>在option 中定义selected =” selected “时，当前项即为默认选中项。</li>
+<li>我们实际开发会用的比较少</li>
+</ul>
+<p><img src="/2023/042516994/640-1682406907123-4.png" alt="图片"></p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span><span class="token punctuation">&gt;</span></span>
+  
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">&gt;</span></span>选项1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">&gt;</span></span>选项2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">&gt;</span></span>选项3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">&gt;</span></span>
+  ...
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="form表单域"><a href="#form表单域" class="headerlink" title="form表单域"></a>form表单域</h3><ul>
+<li><p>收集的用户信息怎么传递给服务器？</p>
+</li>
+<li><ul>
+<li>通过form表单域</li>
+</ul>
+</li>
+<li><p>目的：</p>
+</li>
+<li><ul>
+<li>在HTML中，form标签被用于定义表单域，以实现用户信息的收集和传递，form中的所有内容都会被提交给服务器。</li>
+</ul>
+</li>
+</ul>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">action</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>url地址<span class="token punctuation">"</span></span> <span class="token attr-name">method</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>提交方式<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>表单名称<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+  各种表单控件
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>常用属性：</strong></p>
+<ul>
+<li>每个表单都应该有自己表单域。后面学 ajax 后台交互的时候，必须需要form表单域。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="left">属性</th>
+<th align="left">属性值</th>
+<th align="left">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">action</td>
+<td align="left">url地址</td>
+<td align="left">用于指定接收并处理表单数据的服务器程序的url地址。</td>
+</tr>
+<tr>
+<td align="left">method</td>
+<td align="left">get/post</td>
+<td align="left">用于设置表单数据的提交方式，其取值为get或post。</td>
+</tr>
+<tr>
+<td align="left">name</td>
+<td align="left">名称</td>
+<td align="left">用于指定表单的名称，以区分同一个页面中的多个表单。</td>
+</tr>
+</tbody></table>
+<p><strong>GET 和 POST 的区别</strong></p>
+<ul>
+<li>GET在浏览器回退时是无害的，而POST会再次提交请求。</li>
+<li>GET请求会被浏览器主动cache，而POST不会，除非手动设置。</li>
+<li>GET请求只能进行url编码，而POST支持多种编码方式。</li>
+<li>GET请求参数会被完整保留在浏览器历史记录里，而POST中的参数不会被保留。</li>
+<li>GET请求大小一般是(1024字节)，http协议并没有限制，而与服务器，操作系统有关，POST理论上来说没有大小限制，http协议规范也没有进行大小限制，但实际上post所能传递的数据量根据取决于服务器的设置和内存大小。</li>
+<li>对参数的数据类型，GET只接受ASCII字符，而POST没有限制。</li>
+<li>GET比POST更不安全，因为参数直接暴露在URL上，所以不能用来传递敏感信息。</li>
+</ul>
+<p><strong>团队约定：</strong></p>
+<ul>
+<li>元素属性值使用双引号语法</li>
+<li>元素属性值可以写上的都写上</li>
+</ul>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">推荐
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span> 
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>radio<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>name<span class="token punctuation">"</span></span> <span class="token attr-name">checked</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>checked<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<h2 id="从输入url到页面展示发生了什么-面试"><a href="#从输入url到页面展示发生了什么-面试" class="headerlink" title="从输入url到页面展示发生了什么(面试)"></a>从输入url到页面展示发生了什么(面试)</h2><blockquote>
+<p>作者：Twinkle_<br>链接：<a target="_blank" rel="noopener" href="https://juejin.im/post/6869279683230629896">https://juejin.im/post/6869279683230629896</a><br>来源：掘金</p>
+</blockquote>
+<h3 id="浏览器的多进程架构"><a href="#浏览器的多进程架构" class="headerlink" title="浏览器的多进程架构"></a><strong>浏览器的多进程架构</strong></h3><p>从浏览器输入 URL 到页面渲染的整个过程都是由 浏览器架构中的各个进程之间的配合完成。</p>
+<ol>
+<li>浏览器主进程: 管理子进程、提供服务功能</li>
+<li>渲染进程：将HTML、CSS、JS渲染成界面，js引擎v8和排版引擎Blink就在上面，他会为每一个tab页面创建一个渲染进程</li>
+<li>GPU进程：本来是负责处理3Dcss的，后来慢慢的UI界面也交给GPU来绘制</li>
+<li>网络进程：就是负责网络请求，网络资源加载的进程</li>
+<li>插件进程：负责插件的运行的，因为插件很容易崩溃，把它放到独立的进程里不要让它影响别人</li>
+</ol>
+<p><strong>浏览器的多进程架构</strong></p>
+<p>从用户输入信息到页面展示的不同阶段，是不同的进程在发挥作用，示意图如下：<img src="/2023/042516994/640-1682406907123-5.jpeg" alt="图片">从图中可以看出，整个过程是需要各个进程之间相互配合完成的，过程大致可以描述为：</p>
+<ol>
+<li>用户输入url,处理输入信息，主进程开始导航，交给网络进程干活</li>
+<li>网络进程发起网络请求，其中有可能会发生重定向</li>
+<li>服务器响应URL之后，主进程就要通知渲染进程，你要开始干活了</li>
+<li>渲染进程准备好了，要想渲染进程提交数据，这个时间叫做提交文档</li>
+<li>渲染进程接受到数据，完成页面渲染。</li>
+</ol>
+<p><strong>具体过程</strong></p>
+<ol>
+<li>输入url</li>
+</ol>
+<ul>
+<li>用户输入url，处理输入信息：</li>
+<li>如果为非url结构的字符串，交给浏览器默认引擎去搜索改字符串；</li>
+<li>若为url结构的字符串，浏览器主进程会交给 网络进程 ,开始干活。</li>
+</ul>
+<p>2.1 查找浏览器缓存</p>
+<ul>
+<li>网络进程会先看看是否存在本地缓存，如果有就直接返回资源给浏览器进程，无则下一步 DNS-&gt; IP -&gt; TCP</li>
+</ul>
+<p>2.2 DNS解析</p>
+<ul>
+<li>网络进程拿到url后，先会进行DNS域名解析得到IP地址。如果请求协议是HTTPS，那么还需要建立TLS连接。</li>
+</ul>
+<p>2.2 建立TCP连接，三次握手</p>
+<ul>
+<li>接下来就是利用IP地址和服务器建立TCP连接。连接建立之后，向服务器发送请求。</li>
+</ul>
+<ol>
+<li>服务器响应</li>
+</ol>
+<ul>
+<li>服务器收到请求信息后，会根据请求信息生成响应行、响应头、响应体，并发给网络进程。网络进程接受了响应信息之后，就开始解析响应头的内容。</li>
+<li>网络进程解析响应行和响应头信息的过程：</li>
+</ul>
+<p>3.1 重定向</p>
+<ul>
+<li>如果响应行状态码为301（永久重定向）和302（临时），那么说明需要重定向到其他url。这时候网络进程会从响应头中的Location字段里读取重定向的地址，并重新发起网络请求。</li>
+</ul>
+<p>3.2 响应数据处理</p>
+<ul>
+<li>导航会通过请求头的Content-type字段判断响应体数据的类型。浏览器通过这个来决定如何显示响应体的内容。比如：若为application/octet-stream，则会按照下载类型来处理这个请求，导航结束。若为text/html，这就告诉浏览器服务器返回的是html格式，浏览器会通知渲染进程，你要干活了。</li>
+</ul>
+<ol>
+<li>准备渲染进程</li>
+</ol>
+<ul>
+<li>默认情况，每个页面一个渲染进程。但若处于同一站点（同根域名+协议），那么渲染进程就会复用。</li>
+</ul>
+<ol>
+<li>提交文档</li>
+</ol>
+<ul>
+<li>渲染进程准备好后，浏览器进程发出“提交文档的消息”，渲染进程接受了消息之后，会跟网络进程简历传输数据的管道。</li>
+<li>等数据传输完成了，渲染进程会告诉浏览器进程，确认文档提交，这时候浏览器会更新页面，安全状态，url，前进后退的历史。</li>
+<li>到这里导航结束，进入渲染阶段。</li>
+</ul>
+<p>注：当浏览器刚开始加载一个地址之后，标签页上的图标便进入了加载状态。但此时图中页面显示的依然是之前打开的页面内容，并没立即替换为百度首页的页面。因为需要等待提交文档阶段，页面内容才会被替换。</p>
+<h2 id="前端HTML基础面试题"><a href="#前端HTML基础面试题" class="headerlink" title="前端HTML基础面试题"></a>前端HTML基础面试题</h2><h3 id="iframe有哪些缺点？"><a href="#iframe有哪些缺点？" class="headerlink" title="iframe有哪些缺点？"></a>iframe有哪些缺点？</h3><p>iframe是一种框架，也是一种很常见的网页嵌入方式。</p>
+<p><strong>「iframe的优点」</strong></p>
+<ul>
+<li>iframe能够原封不动的把嵌入的网页展现出来。</li>
+<li>如果有多个网页引用iframe，那么你只需要修改iframe的内容，就可以实现调用的每一个页面内容的更改，方便快捷。</li>
+<li>网页如果为了统一风格，头部和版本都是一样的，就可以写成一个页面，用iframe来嵌套，可以增加代码的可重用。</li>
+<li>如果遇到加载缓慢的第三方内容如图标和广告，这些问题可以由iframe来解决。</li>
+</ul>
+<p><strong>「iframe的缺点」</strong></p>
+<ul>
+<li>会产生很多页面，不容易管理。</li>
+<li>iframe框架结构有时会让人感到迷惑，如果框架个数多的话，可能会出现上下、左右滚动条，会分散访问者的注意力，用户体验度差。</li>
+<li>代码复杂，无法被一些搜索引擎索引到，这一点很关键，现在的搜索引擎爬虫还不能很好的处理iframe中的内容，所以使用iframe会不利于搜索引擎优化。</li>
+<li>很多的移动设备（PDA 手机）无法完全显示框架，设备兼容性差。</li>
+<li>iframe框架页面会增加服务器的http请求，对于大型网站是不可取的。</li>
+<li>现在基本上都是用Ajax来代替iframe，所以iframe已经渐渐的退出了前端开发。</li>
+</ul>
+<h3 id="label的作用是什么？是怎么用的？"><a href="#label的作用是什么？是怎么用的？" class="headerlink" title="label的作用是什么？是怎么用的？"></a>label的作用是什么？是怎么用的？</h3><p>例子1: 点击” 用户名:” 就可以定位光标到输入框</p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>myid <span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span> 用户名:<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>myid<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span>  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>例子2: 点击” 用户名:” 或按键alt+1, 都可以定位光标到输入框</p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>myid<span class="token punctuation">"</span></span> <span class="token attr-name">accesskey</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span> 用户名:<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>myid<span class="token punctuation">"</span></span> <span class="token attr-name">tabindex</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>1<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span>  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>for 属性</strong>功能：表示Label 标签要绑定的HTML 元素，你点击这个标签的时候，所绑定的元素将获取焦点。</p>
+<p><strong>acesskey 属性</strong><br>功能：表示访问Label 标签所绑定的元素的热键，当您按下热键，所绑定的元素将获取焦点。<br>局限性：accessKey 属性所设置的快捷键不能与浏览器的快捷键冲突，否则将优先激活浏览器的快捷键。</p>
+<h3 id="HTML5的form如何关闭自动完成功能？"><a href="#HTML5的form如何关闭自动完成功能？" class="headerlink" title="HTML5的form如何关闭自动完成功能？"></a>HTML5的form如何关闭自动完成功能？</h3><p>  HTML的输入框可以拥有自动完成的功能，当你往输入框输入内容的时候，浏览器会从你以前的同名输入框的历史记录中查找出类似的内容并列在输入框下面，这样就不用全部输入进去了，直接选择列表中的项目就可以了。<br>  但有时候我们希望关闭输入框的自动完成功能，例如当用户输入内容的时候，我们希望使用AJAX技术从数据库搜索并列举而不是在用户的历史记录中搜索。</p>
+<p><strong>关闭输入框的自动完成功能有3种方法：</strong></p>
+<ol>
+<li>在IE的Internet选项菜单里的内容–自动完成里面设置</li>
+<li>设置form的autocomplete为”on”或者”off”来开启或者关闭自动完成功能</li>
+<li>设置输入框的autocomplete为”on”或者”off”来开启或者关闭该输入框的自动完成功能</li>
+</ol>
+<h3 id="将-HTML5-看作成开放的网络平台"><a href="#将-HTML5-看作成开放的网络平台" class="headerlink" title="将 HTML5 看作成开放的网络平台"></a>将 HTML5 看作成开放的网络平台</h3><p><strong>「什么是 HTML5 的基本构件（building block）？」</strong></p>
+<ol>
+<li>语义 - 提供更准确地描述内容。</li>
+<li>连接 - 提供新的方式与服务器通信。</li>
+<li>离线和存储 - 允许网页在本地存储数据并有效地离线运行。</li>
+<li>多媒体 - 在 Open Web 中，视频和音频被视为一等公民（first-class citizens）。</li>
+<li>2D/3D 图形和特效 - 提供更多种演示选项。</li>
+<li>性能和集成 - 提供更快的访问速度和性能更好的计算机硬件。</li>
+<li>设备访问 - 允许使用各种输入、输出设备。</li>
+<li>外观 - 可以开发丰富的主题。</li>
+</ol>
+<h3 id="浏览器是怎么对HTML5的离线储存资源进行管理和加载的呢？"><a href="#浏览器是怎么对HTML5的离线储存资源进行管理和加载的呢？" class="headerlink" title="浏览器是怎么对HTML5的离线储存资源进行管理和加载的呢？"></a>浏览器是怎么对HTML5的离线储存资源进行管理和加载的呢？</h3><p>  在浏览器的html头部加上manifest属性，如果是第一次访问浏览器会根据manifest的内容进行下载存储离线内容，如果已经访问过则从离线存储中进行加载，然后在比对服务器如果有新内容在更新离线存储<br>  离线的情况下，浏览器就直接使用离线存储的资源。</p>
+<h3 id="浏览器的渲染过程？"><a href="#浏览器的渲染过程？" class="headerlink" title="浏览器的渲染过程？"></a>浏览器的渲染过程？</h3><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">1、将获取的html解析成dom树
+2、处理css，构成层叠样式表模型CSSOM
+3、将dom树和CSSOM合并为渲染树
+4、根据CSSOM将渲染树的节点布局计算
+5、将渲染树节点样式绘制到页面上
+  
+// 注意
+在渲染的过程中是自上而下渲染，
+js会阻塞页面的渲染，优先等js执行完成
+如果在渲染的过程中改变了样式，会造成回流需要重新渲染<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="link和-import的区别？"><a href="#link和-import的区别？" class="headerlink" title="link和@import的区别？"></a>link和@import的区别？</h3><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">1、从属关系区别：
+link属于html标签，而@import是css提供的。
+2、加载顺序区别：
+页面被加载时，link会同时被加载，而@import引用的css会等到页面被加载完再加载。
+3、兼容性区别：
+import只在IE5以上才能识别，而link是html标签，无兼容问题。
+4、dom可操作性区别：
+可以通过JS 操作 DOM ，插入link标签来改变样式；由于 DOM 方法是基于文档的，无法使用@import的方式插入样式
+5、权重区别：
+如果已经存在相同样式，@import引入的这个样式将被该 CSS 文件本身的样式层叠掉，表现出link方式的样式权重高于@import的权重这样的直观效果。
+（简而言之，link和@import，谁写在后面，谁的样式就被应用，后面的样式覆盖前面的样式。）
+ <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="src与href的区别？"><a href="#src与href的区别？" class="headerlink" title="src与href的区别？"></a>src与href的区别？</h3><pre class="line-numbers language-markdown" data-language="markdown"><code class="language-markdown">1、href 是指向网络资源所在位置，建立和当前元素（锚点）或当前文档（链接）之间的链接，用于超链接。
+2、src是指向外部资源的位置，指向的内容将会嵌入到文档中当前标签所在位置；在请求src资源时会将其指向的资源下载并应用到文档内，例如js脚本，img图片和frame等元素。当浏览器解析到该元素时，会暂停其他资源的下载和处理，直到将该资源加载、编译、执行完毕，图片和框架等元素也如此，类似于将所指向资源嵌入当前标签内。这也是为什么将js脚本放在底部而不是头部。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">Stephen Qiu</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://stephenqhd30.github.io/2023/042516994.html">https://stephenqhd30.github.io/2023/042516994.html</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">Stephen Qiu</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            
+                                <a href="/tags/Linux/">
+                                    <span class="chip bg-color">Linux</span>
+                                </a>
+                            
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2023/04252938.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="JavaScript笔记整理">
+                        
+                        <span class="card-title">JavaScript笔记整理</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            说好的幸福呢
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-04-25
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8BHTML%E7%9A%84%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                    记录一下HTML的学习
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Linux/">
+                        <span class="chip bg-color">Linux</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2023/041737913.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="信息的主动收集和被动收集">
+                        
+                        <span class="card-title">信息的主动收集和被动收集</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            我等着泪来提醒你爱谁
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-17
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8B%E7%BD%91%E5%AE%89%E7%9A%84%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                    记录一下网安的学习
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Linux/">
+                        <span class="chip bg-color">Linux</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+
+  <!-- 是否加载使用自带的 prismjs. -->
+  <script type="text/javascript" src="/libs/prism/prism.min.js"></script>
+
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+
+    <div class="container row center-align"
+         style="margin-bottom: 15px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2023</span>
+            
+            <a href="/about" target="_blank">Stephen Qiu</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                        class="white-color">39.4k</span>
+            
+            
+            
+                
+            
+            
+                <span id="busuanzi_container_site_pv">
+                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
+                    <span id="busuanzi_value_site_pv" class="white-color"></span>
+            </span>
+            
+            
+                <span id="busuanzi_container_site_uv">
+                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
+                    <span id="busuanzi_value_site_uv" class="white-color"></span>
+            </span>
+            
+            <br>
+
+            <!-- 运行天数提醒. -->
+            
+                <span id="sitetime"> Loading ...</span>
+                <script>
+                    var calcSiteTime = function () {
+                        var seconds = 1000;
+                        var minutes = seconds * 60;
+                        var hours = minutes * 60;
+                        var days = hours * 24;
+                        var years = days * 365;
+                        var today = new Date();
+                        var startYear = "2023";
+                        var startMonth = "4";
+                        var startDate = "8";
+                        var startHour = "0";
+                        var startMinute = "0";
+                        var startSecond = "0";
+                        var todayYear = today.getFullYear();
+                        var todayMonth = today.getMonth() + 1;
+                        var todayDate = today.getDate();
+                        var todayHour = today.getHours();
+                        var todayMinute = today.getMinutes();
+                        var todaySecond = today.getSeconds();
+                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
+                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+                        var diff = t2 - t1;
+                        var diffYears = Math.floor(diff / years);
+                        var diffDays = Math.floor((diff / days) - diffYears * 365);
+
+                        // 区分是否有年份.
+                        var language = 'zh-CN';
+                        if (startYear === String(todayYear)) {
+                            document.getElementById("year").innerHTML = todayYear;
+                            var daysTip = 'This site has been running for ' + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                daysTip = '本站已运行 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                daysTip = '本站已運行 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = daysTip;
+                        } else {
+                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
+                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
+                                + diffDays + ' days';
+                            if (language === 'zh-CN') {
+                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            } else if (language === 'zh-HK') {
+                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
+                            }
+                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
+                        }
+                    }
+
+                    calcSiteTime();
+                </script>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/Stephenqhd30" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:Stephenqhd@outlook.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2680860645" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2680860645" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 白天和黑夜主题 -->
+<div class="stars-con">
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>  
+</div>
+
+<script>
+    function switchNightMode() {
+        $('<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>').appendTo($('body')),
+        setTimeout(function () {
+            $('body').hasClass('DarkMode') 
+            ? ($('body').removeClass('DarkMode'), localStorage.setItem('isDark', '0'), $('#sum-moon-icon').removeClass("fa-sun").addClass('fa-moon')) 
+            : ($('body').addClass('DarkMode'), localStorage.setItem('isDark', '1'), $('#sum-moon-icon').addClass("fa-sun").removeClass('fa-moon')),
+            
+            setTimeout(function () {
+            $('.Cuteen_DarkSky').fadeOut(1e3, function () {
+                $(this).remove()
+            })
+            }, 2e3)
+        })
+    }
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    
+
+    
+
+    <!-- 雪花特效 -->
+    
+
+    <!-- 鼠标星星特效 -->
+    
+
+     
+        <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+        <script src="/libs/others/TencentCaptcha.js"></script>
+        <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button" hidden></button>
+    
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    <!--腾讯兔小巢-->
+    
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+<!-- 雪花特效
+<script type="text/javascript" src="\js\snow.js"></script> -->
+
+
+</html>
